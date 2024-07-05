@@ -1,0 +1,18 @@
+{
+  "name": "r6-info",
+  "version": "1.0.0",
+  "description": "This package allows you to access information about any R6 operator, currently updated to Y9S2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ".silver_3",
+  "license": "ISC",
+  "keywords": [
+    "R6",
+    "operator",
+    "Rainbow",
+    "six",
+    "siege"
+  ]
+}
