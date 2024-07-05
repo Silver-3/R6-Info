@@ -9,7 +9,7 @@ This package allows you to access information about any R6 operator, currently u
 Install R6-Info with npm
 
 ```bash
-npm install R6-Info
+npm install @silver-3/r6-info
 ```
     
 ## Usage/Examples
@@ -43,7 +43,7 @@ npm install R6-Info
 
 #### Geting information about an operator
 ```javascript
-const R6Info = require('R6-Info');
+const R6Info = require('@silver-3/r6-info');
 const operator = R6Info.getOperator("Striker"); // Operator name <Required>
 
 console.log(operator.name);
@@ -59,7 +59,7 @@ console.log(operator.season);
 
 #### Getting a random operator
 ```javascript
-const R6Info = require('R6-Info');
+const R6Info = require('@silver-3/r6-info');
 const operator = R6Info.randomOperator("defense"); // Team <Required>
 
 console.log(operator.name);
@@ -71,7 +71,7 @@ console.log(operator.bio.realname);
 
 #### Getting all operators/attackers/defenders
 ```javascript
-const R6Info = require('R6-Info');
+const R6Info = require('@silver-3/r6-info');
 
 console.log(R6Info.getAttackers()); // returns all attackers
 console.log(R6Info.getDefenders()); // returns all defenders
