@@ -22,7 +22,7 @@ npm install @silver-3/r6-info
     name: 'Breaching Hammer',
     description: 'Uses a Breaching Hammer to breach through destructible surfaces.'
   },
-  icon: Image,
+  icon: 'FILE_PATH_TO_IMAGE',
   specialies: [ 'Breach', 'Anti-Gadget' ],
   stats: { health: 2, speed: 2, difficulty: 1 },
   bio: {
