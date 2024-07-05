@@ -23,7 +23,7 @@ npm install @silver-3/r6-info
     description: 'Uses a Breaching Hammer to breach through destructible surfaces.'
   },
   icon: 'FILE_PATH_TO_IMAGE',
-  specialies: [ 'Breach', 'Anti-Gadget' ],
+  specialties: [ 'Breach', 'Anti-Gadget' ],
   stats: { health: 2, speed: 2, difficulty: 1 },
   bio: {
     realname: 'Seamus Cowden',

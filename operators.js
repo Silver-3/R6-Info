@@ -9,7 +9,7 @@ module.exports.attack = {
             description: 'Equips two gadets instead of a gadget and an ability. Can select any gadget on the team, but not the same one twice.'
         },
         icon: path.join(__dirname, './icons/striker.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -55,7 +55,7 @@ module.exports.attack = {
             description: 'Uses a Breaching Hammer to breach through destructible surfaces.'
         },
         icon: path.join(__dirname, './icons/sledge.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Anti-Gadget"
         ],
@@ -97,7 +97,7 @@ module.exports.attack = {
             description: 'Uses EMP Grenades to disable any electonics in range.'
         },
         icon: path.join(__dirname, './icons/thatcher.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Support"
         ],
@@ -139,7 +139,7 @@ module.exports.attack = {
             description: 'Fires an explosive Breach Round that burrows into a surface and utomatically detonates.'
         },
         icon: path.join(__dirname, './icons/ash.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Front-Line"
         ],
@@ -175,13 +175,13 @@ module.exports.attack = {
         season: 'Release'
     },
     thermite: {
-        name: 'thermite',
+        name: 'Thermite',
         ability: {
             name: 'Exothermic Charge',
             description: 'Sets an exothermic charge that destroys reinforced walls.'
         },
         icon: path.join(__dirname, './icons/thermite.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Support"
         ],
@@ -223,7 +223,7 @@ module.exports.attack = {
             description: 'Drone that manually fires lasers to destroy opponent devices.'
         },
         icon: path.join(__dirname, './icons/twitch.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -260,13 +260,13 @@ module.exports.attack = {
         season: 'Release'
     },
     montagne: {
-        name: 'Mogtagne',
+        name: 'Montagne',
         ability: {
             name: 'Le Roc Shield',
             description: 'Can expand his Extendable Shield to offer full protection while standing.'
         },
         icon: path.join(__dirname, './icons/montagne.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -308,7 +308,7 @@ module.exports.attack = {
             description: 'Toggles a magnifcation scope with sophisticated image sensors outlining long range marks, even through smoke.'
         },
         icon: path.join(__dirname, './icons/glaz.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -351,7 +351,7 @@ module.exports.attack = {
             description: 'Charge that\' deployed on soft or reinforced surfaces to clear Operators and devices on the other side.'
         },
         icon: path.join(__dirname, './icons/fuze.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget"
         ],
         stats: {
@@ -394,7 +394,7 @@ module.exports.attack = {
             description: 'Triggers the flash attached to his ballistic shield to temporaily blind enemies.'
         },
         icon: path.join(__dirname, './icons/blitz.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map-Control"
         ],
@@ -434,7 +434,7 @@ module.exports.attack = {
             description: 'Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.'
         },
         icon: path.join(__dirname, './icons/iq.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -477,7 +477,7 @@ module.exports.attack = {
             description: 'Toggles under-barrel shotgun attachment on his main weapon.'
         },
         icon: path.join(__dirname, './icons/buck.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Support"
         ],
@@ -508,7 +508,7 @@ module.exports.attack = {
         },
         gadgets: [
             "Stun grenades",
-            "Hard breach cahrge", 
+            "Hard breach charge", 
         ],
         season: 'Y1S1 - Black Ice'
     },
@@ -519,7 +519,7 @@ module.exports.attack = {
             description: 'Deploys a ballistic shield on his rifle that can be swapped if the first one gets damaged.'
         },
         icon: path.join(__dirname, './icons/blackbeard.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -560,7 +560,7 @@ module.exports.attack = {
             description: 'Tactical crossbow that fires incendiary bolts and micro smoke grenades.'
         },
         icon: path.join(__dirname, './icons/capitao.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -603,7 +603,7 @@ module.exports.attack = {
             description: 'A 40mm grenade launcher firing explsive pallets that can be detonated from a distance.'
         },
         icon: path.join(__dirname, './icons/hibana.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Front-Line"
         ],
@@ -645,7 +645,7 @@ module.exports.attack = {
             description: 'Tracking optics that locates targets by revealing and identifying recent footsteps.'
         },
         icon: path.join(__dirname, './icons/jackal.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Map Control"
         ],
@@ -688,7 +688,7 @@ module.exports.attack = {
             description: 'Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade.'
         },
         icon: path.join(__dirname, './icons/ying.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -729,7 +729,7 @@ module.exports.attack = {
             description: 'Double barrel launcher that can fire both concussion and impact grenades.'
         },
         icon: path.join(__dirname, './icons/zofia.png'),
-        specialies: [
+        specialties: [
             "Brach",
             "Anti-Gadget"
         ],
@@ -770,7 +770,7 @@ module.exports.attack = {
             description: 'Calls Defenders phones to compromise their locations and interrupt the use of Observation Tools.'
         },
         icon: path.join(__dirname, './icons/dokkaebi.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Map Control"
         ],
@@ -814,7 +814,7 @@ module.exports.attack = {
             description: 'The EE-ONE-D detects enemy movement, tagging their position during the scan.'
         },
         icon: path.join(__dirname, './icons/lion.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Map control"
         ],
@@ -858,7 +858,7 @@ module.exports.attack = {
             description: 'Activates nanobots to give allies an HP boost and revive those who are downed, including herself.'
         },
         icon: path.join(__dirname, './icons/finka.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Support"
         ],
@@ -902,7 +902,7 @@ module.exports.attack = {
             description: 'Blowtorch capable of burning holes through reinforced walls at an almost inaudible level.'
         },
         icon: path.join(__dirname, './icons/maverick.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Front-Line"
         ],
@@ -944,7 +944,7 @@ module.exports.attack = {
             description: 'Rifle attachment shooting an adhesive repulsion device that deonates by proximity.'
         },
         icon: path.join(__dirname, './icons/nomad.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -986,7 +986,7 @@ module.exports.attack = {
             description: 'Thrown gadget that deploys barbed mats capable of shlowing down and hurting enemies to traverse them.'
         },
         icon: path.join(__dirname, './icons/gridlock.png'),
-        specialies: [
+        specialties: [
             "Support",
             "Map Control"
         ],
@@ -1029,7 +1029,7 @@ module.exports.attack = {
             description: 'Counter-intel that wipes their presence from Observation Tools.'
         },
         icon: path.join(__dirname, './icons/nokk.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -1072,7 +1072,7 @@ module.exports.attack = {
             description: 'A high-tensile grappling gun used for fast access to rappel points and hatches, or to enter via exterior windows at limited distances.'
         },
         icon: path.join(__dirname, './icons/amaru.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -1115,7 +1115,7 @@ module.exports.attack = {
             description: 'Under-barrel mechanical projectile that explodes within a set radius to destroy gadgets on both sides of breaking and reinforced surfaces.'
         },
         icon: path.join(__dirname, './icons/kali.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Support"
         ],
@@ -1157,7 +1157,7 @@ module.exports.attack = {
             description: 'Deploys a remote-controlled holographic copy of Iana to fool oppents and gather intel.'
         },
         icon: path.join(__dirname, './icons/iana.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Support"
         ],
@@ -1199,7 +1199,7 @@ module.exports.attack = {
             description: 'Thrown gadget that deploys hydraulic pressure pellets to breach breakable and reinforced surfaces.'
         },
         icon: path.join(__dirname, './icons/ace.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Anti-Gadget"
         ],
@@ -1240,7 +1240,7 @@ module.exports.attack = {
             description: 'Launcher that deploys cameras which can pierce through breakable and reinforced surfaces to surveil either side and shoot a laser.'
         },
         icon: path.join(__dirname, './icons/zero.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -1282,7 +1282,7 @@ module.exports.attack = {
             description: 'Remote control charge that anchors to a surface, becomes bulletproof, then detonates after a set time period.'
         },
         icon: path.join(__dirname, './icons/flores.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -1323,7 +1323,7 @@ module.exports.attack = {
             description: 'Transparent bulletproof shield that can be carried for deployed on floors and window frames.'
         },
         icon: path.join(__dirname, './icons/osa.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -1365,7 +1365,7 @@ module.exports.attack = {
             description: 'Trowablle rolling device with a lighting system that projects a screen to obstruct visibility.'
         },
         icon: path.join(__dirname, './icons/sens.png'),
-        specialies: [
+        specialties: [
             "Support",
             "Map Control"
         ],
@@ -1407,7 +1407,7 @@ module.exports.attack = {
             description: 'Launcher that fires a canister, releasing a swarm of bots that reveals opponents passing through it for a limited time.'
         },
         icon: path.join(__dirname, './icons/grim.png'),
-        specialies: [
+        specialties: [
             "Front-Line",
             "Map Control"
         ],
@@ -1450,7 +1450,7 @@ module.exports.attack = {
             description: 'Deployable drone that either takes control of electronic devices or destroys them after a short delay.'
         },
         icon: path.join(__dirname, './icons/brava.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -1492,7 +1492,7 @@ module.exports.attack = {
             description: 'Deployable mini-tank that moves along a set path destroying devices and breakable surfaces in its way.'
         },
         icon: path.join(__dirname, './icons/ram.png'),
-        specialies: [
+        specialties: [
             "Breach",
             "Anti-Gadget"
         ],
@@ -1534,7 +1534,7 @@ module.exports.attack = {
             description: 'Small probe that reveals an Opponent and Deimos to each other for a limited time.'
         },
         icon: path.join(__dirname, './icons/deimos.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Map Control"
         ],
@@ -1580,7 +1580,7 @@ module.exports.defense = {
             description: 'Equips two gadets instead of a gadget and an ability. Can select any gadget on the team, but not the same one twice.'
         },
         icon: path.join(__dirname, './icons/sentry.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -1626,7 +1626,7 @@ module.exports.defense = {
             description: 'Sets remote detonated toxic gas charges.'
         },
         icon: path.join(__dirname, './icons/smoke.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -1668,7 +1668,7 @@ module.exports.defense = {
             description: 'Jammer which makes electronic gadgets in range malfunction.'
         },
         icon: path.join(__dirname, './icons/mute.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Crowd-Control"
         ],
@@ -1710,7 +1710,7 @@ module.exports.defense = {
             description: 'Sets bulletproof barricades that are more resistant than standard ones.'
         },
         icon: path.join(__dirname, './icons/castle.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Support"
         ],
@@ -1753,7 +1753,7 @@ module.exports.defense = {
             description: 'Detects heartbeats at a short distance through obstacles.'
         },
         icon: path.join(__dirname, './icons/pulse.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Suppot"
         ],
@@ -1795,7 +1795,7 @@ module.exports.defense = {
             description: 'Fires a shot that provides Doc and his team with a health boost or revive from a distance.'
         },
         icon: path.join(__dirname, './icons/doc.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -1838,7 +1838,7 @@ module.exports.defense = {
             description: 'Drops a supply bag full of armor plates for his team to use.'
         },
         icon: path.join(__dirname, './icons/rook.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -1881,7 +1881,7 @@ module.exports.defense = {
             description: 'Sets booby traps on windows and door frames.'
         },
         icon: path.join(__dirname, './icons/kapkan.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -1923,7 +1923,7 @@ module.exports.defense = {
             description: 'Launcher firing havy incendiary grenades with a timed fuse activated on the first bounce. (Lord Tachanka)'
         },
         icon: path.join(__dirname, './icons/tachanka.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Crowd Control"
         ],
@@ -1967,7 +1967,7 @@ module.exports.defense = {
             description: 'Uses an Active Defense system to intercept grenades before they detonate.'
         },
         icon: path.join(__dirname, './icons/jager.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Support"
         ],
@@ -2008,7 +2008,7 @@ module.exports.defense = {
             description: 'Sets up a Crude Electrical Devicce that electrifies other gadgets and damages anything that comes within contact.'
         },
         icon: path.join(__dirname, './icons/bandit.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "anti-Gadget"
         ],
@@ -2049,7 +2049,7 @@ module.exports.defense = {
             description: 'Uses a mechanical trap to incapacitate enemies.'
         },
         icon: path.join(__dirname, './icons/frost.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -2091,7 +2091,7 @@ module.exports.defense = {
             description: 'Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.'
         },
         icon: path.join(__dirname, './icons/valkyrie.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -2132,7 +2132,7 @@ module.exports.defense = {
             description: 'Caveira\'s predatory stealth, the "Silent Step," allows her to lurk on her prey, almost inaudible, until it\' too late.'
         },
         icon: path.join(__dirname, './icons/caveira.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Crowd Control"
         ],
@@ -2173,7 +2173,7 @@ module.exports.defense = {
             description: 'Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Operator.'
         },
         icon: path.join(__dirname, './icons/echo.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Crowd Control"
         ],
@@ -2215,7 +2215,7 @@ module.exports.defense = {
             description: 'Deploys a one-way bulletproof mirror on breakable and reinforced walls. Can also be ejected to create a murder hole.'
         },
         icon: path.join(__dirname, './icons/mira.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -2257,7 +2257,7 @@ module.exports.defense = {
             description: 'Toxic mines that inject a compound, injuring opponents and limiting their speed.'
         },
         icon: path.join(__dirname, './icons/lesion.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -2299,7 +2299,7 @@ module.exports.defense = {
             description: 'Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect.'
         },
         icon: path.join(__dirname, './icons/ela.png'),
-        specialies: [
+        specialties: [
             "Crowd Control",
             "Trapper"
         ],
@@ -2341,7 +2341,7 @@ module.exports.defense = {
             description: 'Vigil scans surrounding devices to whipe his image from cameras and drones.'
         },
         icon: path.join(__dirname, './icons/vigil.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Crowd Control"
         ],
@@ -2383,7 +2383,7 @@ module.exports.defense = {
             description: 'A remote controlled bulletproof camera armed with a high-energy laser.'
         },
         icon: path.join(__dirname, './icons/maestro.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intl"
         ],
@@ -2426,7 +2426,7 @@ module.exports.defense = {
             description: 'Deploys holograms of Alibi and tags hostiles when fired upon.'
         },
         icon: path.join(__dirname, './icons/alibi.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Trapper"
         ],
@@ -2468,7 +2468,7 @@ module.exports.defense = {
             description: 'Extendable ecltro shield capable of slowing down enemies, causing damage over time.'
         },
         icon: path.join(__dirname, './icons/clash.png'),
-        specialies: [
+        specialties: [
             "Inte;",
             "Crowd Control"
         ],
@@ -2511,7 +2511,7 @@ module.exports.defense = {
             description: 'Electrifies reinforced walls and hatches, barbed wire and deployable shields in its affected area.'
         },
         icon: path.join(__dirname, './icons/kaid.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Anti-Gadget"
         ],
@@ -2554,7 +2554,7 @@ module.exports.defense = {
             description: 'Launches autonomous bots that latch onto nearby enemy drones, hijacking their controls.'
         },
         icon: path.join(__dirname, './icons/mozzie.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -2595,7 +2595,7 @@ module.exports.defense = {
             description: 'Eyewear that improves visibility in smoke while standing still. Can also be activated to protect again or reduce flash blindness.'
         },
         icon: path.join(__dirname, './icons/warden.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Intel"
         ],
@@ -2638,7 +2638,7 @@ module.exports.defense = {
             description: 'Incendiary bomb that can be deployed on floors or walls and explodes when destroyed.'
         },
         icon: path.join(__dirname, './icons/goyo.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -2680,7 +2680,7 @@ module.exports.defense = {
             description: 'Throwable device that sticks to a surface, captures an incoming projectile, then detonates it and self-destructs.'
         },
         icon: path.join(__dirname, './icons/wamai.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Trapper"
         ],
@@ -2722,7 +2722,7 @@ module.exports.defense = {
             description: 'Fast dash that allows for faster roaming, breaches breakable walls, and pushes back opponents.'
         },
         icon: path.join(__dirname, './icons/oryx.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -2763,7 +2763,7 @@ module.exports.defense = {
             description: 'Deployable device with a bulletproof shell and exposed center that emits sound to slow down opponents in range.'
         },
         icon: path.join(__dirname, './icons/melusi.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Crowd Control"
         ],
@@ -2804,7 +2804,7 @@ module.exports.defense = {
             description: 'Laser-generating device set on walls or entry points that deactivates after damaging gadgets or opponents, and is reactivatable.'
         },
         icon: path.join(__dirname, './icons/aruni.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Anti-Gadget"
         ],
@@ -2845,7 +2845,7 @@ module.exports.defense = {
             description: 'Deployable device that gives an HP boost or offers a revive to a downed Operator in proximity.'
         },
         icon: path.join(__dirname, './icons/thunderbird.png'),
-        specialies: [
+        specialties: [
             "Support"
         ],
         stats: {
@@ -2887,7 +2887,7 @@ module.exports.defense = {
             description: 'Throwable device that sticks to surfaces and propels a set of sharp blades shortly after detecting nearby opponents.'
         },
         icon: path.join(__dirname, './icons/thorn.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Trapper"
         ],
@@ -2929,7 +2929,7 @@ module.exports.defense = {
             description: 'Throwable device that sticks to surfaces and releases a gas that solidifers to create a barrier.'
         },
         icon: path.join(__dirname, './icons/azami.png'),
-        specialies: [
+        specialties: [
             "Anti-Entry",
             "Support"
         ],
@@ -2970,7 +2970,7 @@ module.exports.defense = {
             description: 'Device that identifies opponent electronic devices, then scans them to ping their locations.'
         },
         icon: path.join(__dirname, './icons/solis.png'),
-        specialies: [
+        specialties: [
             "Intel",
             "Support"
         ],
@@ -3011,7 +3011,7 @@ module.exports.defense = {
             description: 'Throwable device that sticks to surfaces and releases a fear-inducing gas when it detects nearby opponents.'
         },
         icon: path.join(__dirname, './icons/fenrir.png'),
-        specialies: [
+        specialties: [
             "Crowd Control",
             "Trapper"
         ],
@@ -3053,7 +3053,7 @@ module.exports.defense = {
             description: 'Throwable device that stcks to surfaces and releases a freezing gas, deactivating devices and slowing enemies.'
         },
         icon: path.join(__dirname, './icons/tubarao.png'),
-        specialies: [
+        specialties: [
             "Anti-Gadget",
             "Crowd Control"
         ],
@@ -3096,7 +3096,7 @@ module.exports.defense = {
 //         description: ''
 //     },
 //     icon: path.join(__dirname, './icons/OPERATOR.png'),
-//     specialies: [
+//     specialties: [
 //         "",
 //         ""
 //     ],
