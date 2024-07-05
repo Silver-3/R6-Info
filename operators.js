@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 module.exports.attack = {
     striker: {
@@ -7,7 +8,7 @@ module.exports.attack = {
             name: 'Gadget Kit',
             description: 'Equips two gadets instead of a gadget and an ability. Can select any gadget on the team, but not the same one twice.'
         },
-        icon: fs.readFileSync('./icons/striker.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/striker.png')),
         specialies: [
             "Support"
         ],
@@ -53,7 +54,7 @@ module.exports.attack = {
             name: 'Breaching Hammer',
             description: 'Uses a Breaching Hammer to breach through destructible surfaces.'
         },
-        icon: fs.readFileSync('./icons/sledge.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/sledge.png')),
         specialies: [
             "Breach",
             "Anti-Gadget"
@@ -95,7 +96,7 @@ module.exports.attack = {
             name: 'EMP Grenade',
             description: 'Uses EMP Grenades to disable any electonics in range.'
         },
-        icon: fs.readFileSync('./icons/thatcher.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/thatcher.png')),
         specialies: [
             "Anti-Gadget",
             "Support"
@@ -137,7 +138,7 @@ module.exports.attack = {
             name: 'Breaching Round',
             description: 'Fires an explosive Breach Round that burrows into a surface and utomatically detonates.'
         },
-        icon: fs.readFileSync('./icons/ash.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/ash.png')),
         specialies: [
             "Breach",
             "Front-Line"
@@ -179,7 +180,7 @@ module.exports.attack = {
             name: 'Exothermic Charge',
             description: 'Sets an exothermic charge that destroys reinforced walls.'
         },
-        icon: fs.readFileSync('./icons/thermite.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/thermite.png')),
         specialies: [
             "Breach",
             "Support"
@@ -221,7 +222,7 @@ module.exports.attack = {
             name: 'Shock Drone',
             description: 'Drone that manually fires lasers to destroy opponent devices.'
         },
-        icon: fs.readFileSync('./icons/twitch.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/twitch.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -264,7 +265,7 @@ module.exports.attack = {
             name: 'Le Roc Shield',
             description: 'Can expand his Extendable Shield to offer full protection while standing.'
         },
-        icon: fs.readFileSync('./icons/montagne.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/montagne.png')),
         specialies: [
             "Intel",
             "Support"
@@ -306,7 +307,7 @@ module.exports.attack = {
             name: 'Flip Sight',
             description: 'Toggles a magnifcation scope with sophisticated image sensors outlining long range marks, even through smoke.'
         },
-        icon: fs.readFileSync('./icons/glaz.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/glaz.png')),
         specialies: [
             "Intel",
             "Support"
@@ -349,7 +350,7 @@ module.exports.attack = {
             name: 'Cluster Charge',
             description: 'Charge that\' deployed on soft or reinforced surfaces to clear Operators and devices on the other side.'
         },
-        icon: fs.readFileSync('./icons/fuze.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/fuze.png')),
         specialies: [
             "Anti-Gadget"
         ],
@@ -392,7 +393,7 @@ module.exports.attack = {
             name: 'G52-Tactical Shield',
             description: 'Triggers the flash attached to his ballistic shield to temporaily blind enemies.'
         },
-        icon: fs.readFileSync('./icons/blitz.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/blitz.png')),
         specialies: [
             "Front-Line",
             "Map-Control"
@@ -432,7 +433,7 @@ module.exports.attack = {
             name: 'Electronics Detector',
             description: 'Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.'
         },
-        icon: fs.readFileSync('./icons/iq.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/iq.png')),
         specialies: [
             "Intel",
             "Support"
@@ -475,7 +476,7 @@ module.exports.attack = {
             name: 'Skeleton Key',
             description: 'Toggles under-barrel shotgun attachment on his main weapon.'
         },
-        icon: fs.readFileSync('./icons/buck.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/buck.png')),
         specialies: [
             "Breach",
             "Support"
@@ -517,7 +518,7 @@ module.exports.attack = {
             name: 'Rifle-Shield',
             description: 'Deploys a ballistic shield on his rifle that can be swapped if the first one gets damaged.'
         },
-        icon: fs.readFileSync('./icons/blackbeard.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/blackbeard.png')),
         specialies: [
             "Support"
         ],
@@ -558,7 +559,7 @@ module.exports.attack = {
             name: 'Tactical Crossbow',
             description: 'Tactical crossbow that fires incendiary bolts and micro smoke grenades.'
         },
-        icon: fs.readFileSync('./icons/capitao.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/capitao.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -601,7 +602,7 @@ module.exports.attack = {
             name: 'X-Kairdos',
             description: 'A 40mm grenade launcher firing explsive pallets that can be detonated from a distance.'
         },
-        icon: fs.readFileSync('./icons/hibana.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/hibana.png')),
         specialies: [
             "Breach",
             "Front-Line"
@@ -643,7 +644,7 @@ module.exports.attack = {
             name: 'Eyenox Model III',
             description: 'Tracking optics that locates targets by revealing and identifying recent footsteps.'
         },
-        icon: fs.readFileSync('./icons/jackal.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/jackal.png')),
         specialies: [
             "Intel",
             "Map Control"
@@ -686,7 +687,7 @@ module.exports.attack = {
             name: 'Candela',
             description: 'Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade.'
         },
-        icon: fs.readFileSync('./icons/ying.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/ying.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -727,7 +728,7 @@ module.exports.attack = {
             name: 'KS79 Lifeline',
             description: 'Double barrel launcher that can fire both concussion and impact grenades.'
         },
-        icon: fs.readFileSync('./icons/zofia.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/zofia.png')),
         specialies: [
             "Brach",
             "Anti-Gadget"
@@ -768,7 +769,7 @@ module.exports.attack = {
             name: 'Logic Bomb',
             description: 'Calls Defenders phones to compromise their locations and interrupt the use of Observation Tools.'
         },
-        icon: fs.readFileSync('./icons/dokkaebi.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/dokkaebi.png')),
         specialies: [
             "Intel",
             "Map Control"
@@ -812,7 +813,7 @@ module.exports.attack = {
             name: 'EE-ONE-D',
             description: 'The EE-ONE-D detects enemy movement, tagging their position during the scan.'
         },
-        icon: fs.readFileSync('./icons/lion.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/lion.png')),
         specialies: [
             "Intel",
             "Map control"
@@ -856,7 +857,7 @@ module.exports.attack = {
             name: 'Adrenal Surge',
             description: 'Activates nanobots to give allies an HP boost and revive those who are downed, including herself.'
         },
-        icon: fs.readFileSync('./icons/finka.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/finka.png')),
         specialies: [
             "Front-Line",
             "Support"
@@ -900,7 +901,7 @@ module.exports.attack = {
             name: 'Breacing Torch',
             description: 'Blowtorch capable of burning holes through reinforced walls at an almost inaudible level.'
         },
-        icon: fs.readFileSync('./icons/maverick.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/maverick.png')),
         specialies: [
             "Breach",
             "Front-Line"
@@ -942,7 +943,7 @@ module.exports.attack = {
             name: 'Airjab Launcher',
             description: 'Rifle attachment shooting an adhesive repulsion device that deonates by proximity.'
         },
-        icon: fs.readFileSync('./icons/nomad.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/nomad.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -984,7 +985,7 @@ module.exports.attack = {
             name: 'Trax Stingers',
             description: 'Thrown gadget that deploys barbed mats capable of shlowing down and hurting enemies to traverse them.'
         },
-        icon: fs.readFileSync('./icons/gridlock.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/gridlock.png')),
         specialies: [
             "Support",
             "Map Control"
@@ -1027,7 +1028,7 @@ module.exports.attack = {
             name: 'Hel Presence Reduction',
             description: 'Counter-intel that wipes their presence from Observation Tools.'
         },
-        icon: fs.readFileSync('./icons/nokk.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/nokk.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -1070,7 +1071,7 @@ module.exports.attack = {
             name: 'Garra Hook',
             description: 'A high-tensile grappling gun used for fast access to rappel points and hatches, or to enter via exterior windows at limited distances.'
         },
-        icon: fs.readFileSync('./icons/amaru.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/amaru.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -1113,7 +1114,7 @@ module.exports.attack = {
             name: 'LV Explosive Lance',
             description: 'Under-barrel mechanical projectile that explodes within a set radius to destroy gadgets on both sides of breaking and reinforced surfaces.'
         },
-        icon: fs.readFileSync('./icons/kali.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/kali.png')),
         specialies: [
             "Anti-Gadget",
             "Support"
@@ -1155,7 +1156,7 @@ module.exports.attack = {
             name: 'Gemini Replicator',
             description: 'Deploys a remote-controlled holographic copy of Iana to fool oppents and gather intel.'
         },
-        icon: fs.readFileSync('./icons/iana.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/iana.png')),
         specialies: [
             "Front-Line",
             "Support"
@@ -1197,7 +1198,7 @@ module.exports.attack = {
             name: 'S.E.L.M.A. Aqua Breacher',
             description: 'Thrown gadget that deploys hydraulic pressure pellets to breach breakable and reinforced surfaces.'
         },
-        icon: fs.readFileSync('./icons/ace.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/ace.png')),
         specialies: [
             "Breach",
             "Anti-Gadget"
@@ -1238,7 +1239,7 @@ module.exports.attack = {
             name: 'Argus Launcher',
             description: 'Launcher that deploys cameras which can pierce through breakable and reinforced surfaces to surveil either side and shoot a laser.'
         },
-        icon: fs.readFileSync('./icons/zero.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/zero.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -1280,7 +1281,7 @@ module.exports.attack = {
             name: 'RCE-Ratero Charge',
             description: 'Remote control charge that anchors to a surface, becomes bulletproof, then detonates after a set time period.'
         },
-        icon: fs.readFileSync('./icons/flores.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/flores.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -1321,7 +1322,7 @@ module.exports.attack = {
             name: 'Talon-8 Shield',
             description: 'Transparent bulletproof shield that can be carried for deployed on floors and window frames.'
         },
-        icon: fs.readFileSync('./icons/osa.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/osa.png')),
         specialies: [
             "Intel",
             "Support"
@@ -1363,7 +1364,7 @@ module.exports.attack = {
             name: 'R.O.U. Projector System',
             description: 'Trowablle rolling device with a lighting system that projects a screen to obstruct visibility.'
         },
-        icon: fs.readFileSync('./icons/sens.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/sens.png')),
         specialies: [
             "Support",
             "Map Control"
@@ -1405,7 +1406,7 @@ module.exports.attack = {
             name: 'Kawan Hive Launcher',
             description: 'Launcher that fires a canister, releasing a swarm of bots that reveals opponents passing through it for a limited time.'
         },
-        icon: fs.readFileSync('./icons/grim.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/grim.png')),
         specialies: [
             "Front-Line",
             "Map Control"
@@ -1448,7 +1449,7 @@ module.exports.attack = {
             name: 'Kludge Drone',
             description: 'Deployable drone that either takes control of electronic devices or destroys them after a short delay.'
         },
-        icon: fs.readFileSync('./icons/brava.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/brava.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -1490,7 +1491,7 @@ module.exports.attack = {
             name: 'BU-GI Auto-Breacher',
             description: 'Deployable mini-tank that moves along a set path destroying devices and breakable surfaces in its way.'
         },
-        icon: fs.readFileSync('./icons/ram.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/ram.png')),
         specialies: [
             "Breach",
             "Anti-Gadget"
@@ -1532,7 +1533,7 @@ module.exports.attack = {
             name: 'Deathmark Tracker',
             description: 'Small probe that reveals an Opponent and Deimos to each other for a limited time.'
         },
-        icon: fs.readFileSync('./icons/deimos.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/deimos.png')),
         specialies: [
             "Intel",
             "Map Control"
@@ -1578,7 +1579,7 @@ module.exports.defense = {
             name: 'Gadget Kit',
             description: 'Equips two gadets instead of a gadget and an ability. Can select any gadget on the team, but not the same one twice.'
         },
-        icon: fs.readFileSync('./icons/sentry.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/sentry.png')),
         specialies: [
             "Support"
         ],
@@ -1624,7 +1625,7 @@ module.exports.defense = {
             name: 'Remote Gas Grenade',
             description: 'Sets remote detonated toxic gas charges.'
         },
-        icon: fs.readFileSync('./icons/smoke.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/smoke.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -1666,7 +1667,7 @@ module.exports.defense = {
             name: 'Signal Disruptor',
             description: 'Jammer which makes electronic gadgets in range malfunction.'
         },
-        icon: fs.readFileSync('./icons/mute.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/mute.png')),
         specialies: [
             "Anti-Gadget",
             "Crowd-Control"
@@ -1708,7 +1709,7 @@ module.exports.defense = {
             name: 'Armor Panel',
             description: 'Sets bulletproof barricades that are more resistant than standard ones.'
         },
-        icon: fs.readFileSync('./icons/castle.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/castle.png')),
         specialies: [
             "Anti-Entry",
             "Support"
@@ -1751,7 +1752,7 @@ module.exports.defense = {
             name: 'Cardiac Sensor',
             description: 'Detects heartbeats at a short distance through obstacles.'
         },
-        icon: fs.readFileSync('./icons/pulse.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/pulse.png')),
         specialies: [
             "Intel",
             "Suppot"
@@ -1793,7 +1794,7 @@ module.exports.defense = {
             name: 'Stim Pistol',
             description: 'Fires a shot that provides Doc and his team with a health boost or revive from a distance.'
         },
-        icon: fs.readFileSync('./icons/doc.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/doc.png')),
         specialies: [
             "Support"
         ],
@@ -1836,7 +1837,7 @@ module.exports.defense = {
             name: 'Armor Pack',
             description: 'Drops a supply bag full of armor plates for his team to use.'
         },
-        icon: fs.readFileSync('./icons/rook.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/rook.png')),
         specialies: [
             "Support"
         ],
@@ -1879,7 +1880,7 @@ module.exports.defense = {
             name: 'Entry Denial Device',
             description: 'Sets booby traps on windows and door frames.'
         },
-        icon: fs.readFileSync('./icons/kapkan.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/kapkan.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -1921,7 +1922,7 @@ module.exports.defense = {
             name: 'Shumikha Launcher',
             description: 'Launcher firing havy incendiary grenades with a timed fuse activated on the first bounce. (Lord Tachanka)'
         },
-        icon: fs.readFileSync('./icons/tachanka.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/tachanka.png')),
         specialies: [
             "Anti-Entry",
             "Crowd Control"
@@ -1965,7 +1966,7 @@ module.exports.defense = {
             name: 'Active Defense',
             description: 'Uses an Active Defense system to intercept grenades before they detonate.'
         },
-        icon: fs.readFileSync('./icons/jager.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/jager.png')),
         specialies: [
             "Anti-Gadget",
             "Support"
@@ -2006,7 +2007,7 @@ module.exports.defense = {
             name: 'Shock Wire',
             description: 'Sets up a Crude Electrical Devicce that electrifies other gadgets and damages anything that comes within contact.'
         },
-        icon: fs.readFileSync('./icons/bandit.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/bandit.png')),
         specialies: [
             "Anti-Entry",
             "anti-Gadget"
@@ -2047,7 +2048,7 @@ module.exports.defense = {
             name: 'Welcome Mat',
             description: 'Uses a mechanical trap to incapacitate enemies.'
         },
-        icon: fs.readFileSync('./icons/frost.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/frost.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -2089,7 +2090,7 @@ module.exports.defense = {
             name: 'Black Eye',
             description: 'Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.'
         },
-        icon: fs.readFileSync('./icons/valkyrie.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/valkyrie.png')),
         specialies: [
             "Intel",
             "Support"
@@ -2130,7 +2131,7 @@ module.exports.defense = {
             name: 'Silent Step',
             description: 'Caveira\'s predatory stealth, the "Silent Step," allows her to lurk on her prey, almost inaudible, until it\' too late.'
         },
-        icon: fs.readFileSync('./icons/caveira.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/caveira.png')),
         specialies: [
             "Intel",
             "Crowd Control"
@@ -2171,7 +2172,7 @@ module.exports.defense = {
             name: 'Yokai',
             description: 'Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Operator.'
         },
-        icon: fs.readFileSync('./icons/echo.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/echo.png')),
         specialies: [
             "Intel",
             "Crowd Control"
@@ -2213,7 +2214,7 @@ module.exports.defense = {
             name: 'Black Mirror',
             description: 'Deploys a one-way bulletproof mirror on breakable and reinforced walls. Can also be ejected to create a murder hole.'
         },
-        icon: fs.readFileSync('./icons/mira.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/mira.png')),
         specialies: [
             "Intel",
             "Support"
@@ -2255,7 +2256,7 @@ module.exports.defense = {
             name: 'Gu',
             description: 'Toxic mines that inject a compound, injuring opponents and limiting their speed.'
         },
-        icon: fs.readFileSync('./icons/lesion.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/lesion.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -2297,7 +2298,7 @@ module.exports.defense = {
             name: 'Grzmot Mine',
             description: 'Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect.'
         },
-        icon: fs.readFileSync('./icons/ela.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/ela.png')),
         specialies: [
             "Crowd Control",
             "Trapper"
@@ -2339,7 +2340,7 @@ module.exports.defense = {
             name: 'ERC-7',
             description: 'Vigil scans surrounding devices to whipe his image from cameras and drones.'
         },
-        icon: fs.readFileSync('./icons/vigil.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/vigil.png')),
         specialies: [
             "Anti-Gadget",
             "Crowd Control"
@@ -2381,7 +2382,7 @@ module.exports.defense = {
             name: 'Evil Eye',
             description: 'A remote controlled bulletproof camera armed with a high-energy laser.'
         },
-        icon: fs.readFileSync('./icons/maestro.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/maestro.png')),
         specialies: [
             "Anti-Gadget",
             "Intl"
@@ -2424,7 +2425,7 @@ module.exports.defense = {
             name: 'Prisma',
             description: 'Deploys holograms of Alibi and tags hostiles when fired upon.'
         },
-        icon: fs.readFileSync('./icons/alibi.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/alibi.png')),
         specialies: [
             "Intel",
             "Trapper"
@@ -2466,7 +2467,7 @@ module.exports.defense = {
             name: 'CCE Shield',
             description: 'Extendable ecltro shield capable of slowing down enemies, causing damage over time.'
         },
-        icon: fs.readFileSync('./icons/clash.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/clash.png')),
         specialies: [
             "Inte;",
             "Crowd Control"
@@ -2509,7 +2510,7 @@ module.exports.defense = {
             name: 'Rtila Electroclaw',
             description: 'Electrifies reinforced walls and hatches, barbed wire and deployable shields in its affected area.'
         },
-        icon: fs.readFileSync('./icons/kaid.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/kaid.png')),
         specialies: [
             "Anti-Entry",
             "Anti-Gadget"
@@ -2552,7 +2553,7 @@ module.exports.defense = {
             name: 'Pest Launcher',
             description: 'Launches autonomous bots that latch onto nearby enemy drones, hijacking their controls.'
         },
-        icon: fs.readFileSync('./icons/mozzie.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/mozzie.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -2593,7 +2594,7 @@ module.exports.defense = {
             name: 'Glance Smart Glasses',
             description: 'Eyewear that improves visibility in smoke while standing still. Can also be activated to protect again or reduce flash blindness.'
         },
-        icon: fs.readFileSync('./icons/warden.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/warden.png')),
         specialies: [
             "Anti-Gadget",
             "Intel"
@@ -2636,7 +2637,7 @@ module.exports.defense = {
             name: 'Volcan Canister',
             description: 'Incendiary bomb that can be deployed on floors or walls and explodes when destroyed.'
         },
-        icon: fs.readFileSync('./icons/goyo.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/goyo.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -2678,7 +2679,7 @@ module.exports.defense = {
             name: 'Mag-net System',
             description: 'Throwable device that sticks to a surface, captures an incoming projectile, then detonates it and self-destructs.'
         },
-        icon: fs.readFileSync('./icons/wamai.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/wamai.png')),
         specialies: [
             "Anti-Gadget",
             "Trapper"
@@ -2720,7 +2721,7 @@ module.exports.defense = {
             name: 'Remah Dash',
             description: 'Fast dash that allows for faster roaming, breaches breakable walls, and pushes back opponents.'
         },
-        icon: fs.readFileSync('./icons/oryx.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/oryx.png')),
         specialies: [
             "Support"
         ],
@@ -2761,7 +2762,7 @@ module.exports.defense = {
             name: 'Banshee Sonic Defense',
             description: 'Deployable device with a bulletproof shell and exposed center that emits sound to slow down opponents in range.'
         },
-        icon: fs.readFileSync('./icons/melusi.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/melusi.png')),
         specialies: [
             "Intel",
             "Crowd Control"
@@ -2802,7 +2803,7 @@ module.exports.defense = {
             name: 'Surya Gate',
             description: 'Laser-generating device set on walls or entry points that deactivates after damaging gadgets or opponents, and is reactivatable.'
         },
-        icon: fs.readFileSync('./icons/aruni.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/aruni.png')),
         specialies: [
             "Anti-Entry",
             "Anti-Gadget"
@@ -2843,7 +2844,7 @@ module.exports.defense = {
             name: 'Kona Station',
             description: 'Deployable device that gives an HP boost or offers a revive to a downed Operator in proximity.'
         },
-        icon: fs.readFileSync('./icons/thunderbird.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/thunderbird.png')),
         specialies: [
             "Support"
         ],
@@ -2885,7 +2886,7 @@ module.exports.defense = {
             name: 'Razorbloom Shell',
             description: 'Throwable device that sticks to surfaces and propels a set of sharp blades shortly after detecting nearby opponents.'
         },
-        icon: fs.readFileSync('./icons/thorn.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/thorn.png')),
         specialies: [
             "Anti-Entry",
             "Trapper"
@@ -2927,7 +2928,7 @@ module.exports.defense = {
             name: 'Kiba Barrier',
             description: 'Throwable device that sticks to surfaces and releases a gas that solidifers to create a barrier.'
         },
-        icon: fs.readFileSync('./icons/azami.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/azami.png')),
         specialies: [
             "Anti-Entry",
             "Support"
@@ -2968,7 +2969,7 @@ module.exports.defense = {
             name: 'Spec-io Electro-Sensor',
             description: 'Device that identifies opponent electronic devices, then scans them to ping their locations.'
         },
-        icon: fs.readFileSync('./icons/solis.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/solis.png')),
         specialies: [
             "Intel",
             "Support"
@@ -3009,7 +3010,7 @@ module.exports.defense = {
             name: 'F-Natt Dread Mine',
             description: 'Throwable device that sticks to surfaces and releases a fear-inducing gas when it detects nearby opponents.'
         },
-        icon: fs.readFileSync('./icons/fenrir.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/fenrir.png')),
         specialies: [
             "Crowd Control",
             "Trapper"
@@ -3051,7 +3052,7 @@ module.exports.defense = {
             name: 'Zoto Canister',
             description: 'Throwable device that stcks to surfaces and releases a freezing gas, deactivating devices and slowing enemies.'
         },
-        icon: fs.readFileSync('./icons/tubarao.png'),
+        icon: fs.readFileSync(path.resolve(__dirname, './icons/tubarao.png')),
         specialies: [
             "Anti-Gadget",
             "Crowd Control"
@@ -3094,7 +3095,7 @@ module.exports.defense = {
 //         name: '',
 //         description: ''
 //     },
-//     icon: fs.readFileSync('./icons/OPERATOR.png'),
+//     icon: fs.readFileSync(path.resolve(__dirname, './icons/OPERATOR.png')),
 //     specialies: [
 //         "",
 //         ""
