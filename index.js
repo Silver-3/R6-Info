@@ -1,3 +1,5 @@
+// Operators
+
 const operators = require('./operators');
 
 function randomOperator(team) {
@@ -44,10 +46,63 @@ function getAllOperators() {
     return operatorArray;
 }
 
+// MAPS
+
+const maps = require('./maps');
+
+function randomMap(type) {
+    type = type.toLowerCase().replace(' ', '');
+    if (!type == "ranked" || !type == "nonranked") throw new Error("Invalid type of map. Must be 'ranked' or 'non ranked'");
+    
+    const keys = Object.keys(maps[type]);
+    return maps[type][keys[Math.floor(Math.random() * keys.length)]];
+}
+
+function getMap(map) {
+    if (!map) throw new Error("Map name is required");
+    
+    map = map.toLowerCase().replace(' ', '');
+    const ranked = Object.keys(maps.ranked).find(key => key.toLowerCase() === map);
+    const nonranked = Object.keys(maps.nonranked).find(key => key.toLowerCase() === map);
+
+    if (!ranked && !nonranked) throw new Error("Map not found. If you think that this is wrong then please dm .silver_3");
+
+    return ranked ? maps.ranked[map] : maps.nonranked[map];
+}
+
+function getRankedMaps() {
+    return Object.keys(maps.ranked).map(map => ({
+        [map]: maps.ranked[map]
+    }));
+}
+
+function getNonrankedMaps() {
+    return Object.keys(maps.nonranked).map(map => ({
+        [map]: maps.nonranked[map]
+    }));
+}
+
+function getAllMaps() {
+    let mapArray = [];
+
+    for (let type in maps) {
+        for (let map in maps[type]) {
+            mapArray.push(maps[type][map]);
+        }
+    }
+
+    return mapArray;
+}
+
 module.exports = {
     randomOperator,
     getOperator,
     getAttackers,
     getDefenders,
-    getAllOperators
+    getAllOperators,
+    randomMap,
+    getMap,
+    getRankedMaps,
+    getNonrankedMaps,
+    getAllMaps
 }

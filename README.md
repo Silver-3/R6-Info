@@ -1,7 +1,7 @@
 
 # R6-Info
 
-This package allows you to access information about any R6 operator, currently updated to Y9S2. 
+This package allows you to access information about any R6 operator or map, currently updated to Y9S2. 
 A discord bot that I have made with this package can be found [here](https://github.com/Silver-3/R6-operator)
 
 ## Installation
@@ -12,7 +12,7 @@ Install R6-Info with npm
 npm install @silver-3/r6-info
 ```
     
-## Usage/Examples
+## Usage/Examples of finding an operator
 
 #### Layout of an operator
 ```batch
@@ -84,6 +84,57 @@ console.log(R6Info.getAllOperators()); // returns all operators
 //     {operator three}
 // ]
 ```
+
+## Usage/Examples of finding an map
+
+#### Layout of an map
+```batch
+{
+  name: 'Oregon',
+  image: 'FILE_PATH_TO_IMAGE'
+}
+```
+
+#### Geting an map
+```javascript
+const R6Info = require('@silver-3/r6-info');
+const map = R6Info.getMap("Oregon"); // Full map name <Required>
+
+console.log(map.name);
+console.log(map.image);
+// Output
+// Oregon
+// FILE_PATH_TO_IMAGE
+```
+
+#### Getting a random map
+```javascript
+const R6Info = require('@silver-3/r6-info');
+const map = R6Info.randomMap("ranked"); // Type (ranked / nonranked) <Required>
+
+console.log(map.name);
+console.log(map.image);
+// Output
+// Kanal
+// FILE_PATH_TO_IMAGE
+```
+
+#### Getting all maps
+```javascript
+const R6Info = require('@silver-3/r6-info');
+
+console.log(R6Info.getRankedMaps()); // returns all ranked maps
+console.log(R6Info.getNonrankedMaps()); // returns all non ranked maps
+console.log(R6Info.getAllMaps()); // returns all maps
+
+// Output
+// [
+//     {map one},
+//     {map two},
+//     {map three}
+// ]
+```
+
 ## Support
 
 For support, dm .silver_3 on discord
