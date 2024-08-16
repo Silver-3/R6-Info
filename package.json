@@ -1,8 +1,8 @@
 {
   "name": "@silver-3/r6-info",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This package allows you to access information about any R6 operator and maps, and more. Currently updated to Y9S2.3",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
