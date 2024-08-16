@@ -1,7 +1,7 @@
 
 # R6-Info
 
-This package allows you to access information about any R6 operator or map, currently updated to Y9S2. 
+This package allows you to access information about any R6 operator or map, and more. Currently updated to Y9S2.3 
 A discord bot that I have made with this package can be found [here](https://github.com/Silver-3/R6-operator)
 
 ## Installation
@@ -135,7 +135,61 @@ console.log(R6Info.getAllMaps()); // returns all maps
 // ]
 ```
 
+## Usage/Examples of finding an weapon
+
+#### Layout of an weapon
+```batch
+"m4": {
+        name: "M4",
+        icon: 'FILE_PATH_TO_IMAGE',
+        stats: {
+            damage: 44,
+            firerate: 750,
+            ammo: 30,
+            maxammo: 181,
+            difficulty: 2
+        },
+        type: "Assault Rifle",
+        scopes: ["Magnified A", "Magnified B", "Magnified C", "Red Dot A", "Red Dot B", "Red Dot C", "Holo A", "Holo B", "Holo C", "Holo D", "Reflex A", "Reflex B", "Reflex C", "Iron Sight"],
+        operators: ["Recruit", "Maverick"]
+    },
+```
+
+#### Geting an weapon
+```javascript
+const R6Info = require('@silver-3/r6-info');
+const weapon = R6Info.getWeapon("mp5"); // exact name from r6 siege
+
+console.log(weapon.name);
+console.log(weapon.stats.damage);
+console.log(weapon.stats.firerate);
+console.log(weapon.operators);
+```
+
+#### Getting a random weapon
+```javascript
+const R6Info = require('@silver-3/r6-info');
+const weapon = R6Info.randomWeapon();
+
+console.log(weapon.name);
+```
+
+#### Getting all weapons
+```javascript
+const R6Info = require('@silver-3/r6-info');
+
+console.log(R6Info.getAllWeapons()); // returns all weapons
+
+// Output
+// [
+//     {weapon one},
+//     {weapon two},
+//     {weapon three}
+// ]
+```
+
 ## Support
 
-For support, dm .silver_3 on discord
+Once again I have created a discord bot with this package that you can checkout [here](https://github.com/Silver-3/R6-operator)\
+For any support, dm `.silver_3` on discord and I will try to help you
 
