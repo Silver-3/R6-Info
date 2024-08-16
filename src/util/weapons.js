@@ -74,7 +74,7 @@ module.exports = {
         operators: ["Recruit", "Ram", "Melusi"]
     },
     "m590a1": {
-        name: "M59OA1",
+        name: "M590A1",
         icon: imageFolder + 'm590a1.png',
         stats: {
             damage: 48,
