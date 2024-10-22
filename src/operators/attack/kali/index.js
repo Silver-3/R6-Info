@@ -38,7 +38,8 @@ module.exports = {
   },
   "gadgets": [
     "Claymore",
-    "Breach charge"
+    "Breach charge",
+    "Smoke grenade"
   ],
   "season": "Y4S4 - Shifting Tides"
 };

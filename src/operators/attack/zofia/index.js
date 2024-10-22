@@ -36,7 +36,7 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Breach charge",
+    "Hard breach charge",
     "Claymor"
   ],
   "season": "Y2S4 - White Noise"

@@ -37,7 +37,8 @@ module.exports = {
   },
   "gadgets": [
     "Barbed wire",
-    "Nitro cell"
+    "Nitro cell",
+    "Impact grenade"
   ],
   "season": "Y4S1 - Burnt Horizon"
 };
