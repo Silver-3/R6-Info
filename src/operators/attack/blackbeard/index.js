@@ -3,17 +3,18 @@ const path = require('path');
 module.exports = {
   "name": "Blackbeard",
   "ability": {
-    "name": "Rifle-Shield",
-    "description": "Deploys a ballistic shield on his rifle that can be swapped if the first one gets damaged."
+    "name": "H.U.L.L. Adaptable Shield",
+    "description": "Ballistic shield that busts through breakable defenses and folds up for using during rappel."
   },
   "icon": path.join(__dirname, './icon.png'),
   "specialties": [
-    "Support"
+    "Breach",
+    "Front-Line"
   ],
   "stats": {
-    "health": 2,
-    "speed": 2,
-    "difficulty": 1
+    "health": 3,
+    "speed": 1,
+    "difficulty": 2
   },
   "bio": {
     "realname": "Craig Jenson",
@@ -31,13 +32,12 @@ module.exports = {
       "SR-25"
     ],
     "secondary": [
-      "D-50"
+      "None"
     ]
   },
   "gadgets": [
-    "Claymore",
-    "Stun grenade",
-    "Frag grenade"
+    "Frag grenade",
+    "Claymore"
   ],
   "season": "Y1S2 - Dust Line"
 };

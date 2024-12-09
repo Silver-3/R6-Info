@@ -1,7 +1,7 @@
 {
   "name": "@silver-3/r6-info",
-  "version": "2.0.2",
-  "description": "This package allows you to access information about any R6 operator and maps, and more. Currently updated to Y9S3.3",
+  "version": "2.0.3",
+  "description": "This package allows you to access information about any R6 operator and maps, and more. Currently updated to Y9S4",
   "main": "./src/index.js",
   "scripts": {
     "publish": "node src/check.js && npm publish",

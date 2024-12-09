@@ -4,10 +4,10 @@ module.exports = {
   "name": "MK17 CQB",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 40,
+    "damage": 44,
     "firerate": 585,
-    "ammo": 20,
-    "maxammo": 181,
+    "ammo": 25,
+    "maxammo": 226,
     "difficulty": 1
   },
   "type": "Assault Rifle",

@@ -32,7 +32,8 @@ module.exports = {
     ],
     "secondary": [
       "BEARING 9",
-      "Q-929"
+      "Q-929",
+      "ITA12S"
     ]
   },
   "gadgets": [
