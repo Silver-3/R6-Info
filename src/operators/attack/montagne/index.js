@@ -28,7 +28,7 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "None"
+      "Le Roc Shield"
     ],
     "secondary": [
       "P9",

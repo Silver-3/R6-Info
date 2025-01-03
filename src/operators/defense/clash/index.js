@@ -28,7 +28,7 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "None"
+      "CCE Shield"
     ],
     "secondary": [
       "Super Shorty",

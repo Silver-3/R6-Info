@@ -28,11 +28,11 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "MK17 CQB",
-      "SR-25"
+      "H.U.L.L. Adaptable Shield"
     ],
     "secondary": [
-      "None"
+      "MK17 CQB",
+      "SR-25"
     ]
   },
   "gadgets": [

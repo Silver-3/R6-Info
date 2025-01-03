@@ -1,7 +1,7 @@
 
 # R6-Info
 
-This package allows you to access information about any R6 operator or map, and more. Currently updated to Y9S4
+This package allows you to access information about any R6 operator or map, and more. Currently updated to Y9S4.1
 A discord bot that I have made with this package can be found [here](https://github.com/Silver-3/R6-operator)
 
 ## Installation
@@ -139,7 +139,7 @@ console.log(R6Info.getAllMaps()); // returns all maps
 
 #### Layout of an weapon
 ```batch
-"m4": {
+{
         name: "M4",
         icon: 'FILE_PATH_TO_IMAGE',
         stats: {
@@ -190,6 +190,5 @@ console.log(R6Info.getAllWeapons()); // returns all weapons
 
 ## Support
 
-Once again I have created a discord bot with this package that you can checkout [here](https://github.com/Silver-3/R6-operator)\
+Once again I have created a discord bot with this package that you can checkout [here](https://github.com/Silver-3/R6-operator)
 For any support, dm `.silver_3` on discord and I will try to help you
-
