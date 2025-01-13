@@ -33,7 +33,7 @@ function getOperator(operator) {
     const attack = Object.keys(operators.attack).find(key => key.toLowerCase() === operator);
     const defense = Object.keys(operators.defense).find(key => key.toLowerCase() === operator);
 
-    if (!attack && !defense) throw new Error(`Operator (${operator}) not found. If you think that this is wrong then please DM ${user} on discord.`);
+    if (!attack && !defense) throw new Error(`Operator (${operator}) not found. If you think that this is wrong then please DM .silver_3 on discord.`);
 
     return attack ? operators.attack[attack] : operators.defense[defense];
 }

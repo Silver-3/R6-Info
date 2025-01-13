@@ -22,7 +22,7 @@ function getWeapon(weapon) {
     weapon = weapon.toLowerCase().replaceAll(' ', '_');
 
     const weaponsA = Object.keys(weapons).find(key => key.toLowerCase() === weapon);
-    if (!weaponsA) throw new Error(`Weapon (${weapon}) not found. If you think that this is wrong then please DM ${user} on discord.`);
+    if (!weaponsA) throw new Error(`Weapon (${weapon}) not found. If you think that this is wrong then please DM .silver_3 on discord.`);
 
     return weapons[weaponsA];
 }
