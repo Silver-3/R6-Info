@@ -32,8 +32,7 @@ module.exports = {
       "LMG-E"
     ],
     "secondary": [
-      "MK1 9mm",
-      "ITA12S"
+      "MK1 9mm"
     ]
   },
   "gadgets": [

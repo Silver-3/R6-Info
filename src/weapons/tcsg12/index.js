@@ -4,7 +4,7 @@ module.exports = {
   "name": "TCSG12",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 63,
+    "damage": 75,
     "firerate": 1,
     "ammo": 10,
     "maxammo": 121,
