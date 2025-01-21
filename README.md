@@ -151,7 +151,7 @@ console.log(R6Info.getAllMaps()); // returns all maps
         },
         type: "Assault Rifle",
         scopes: ["Magnified A", "Magnified B", "Magnified C", "Red Dot A", "Red Dot B", "Red Dot C", "Holo A", "Holo B", "Holo C", "Holo D", "Reflex A", "Reflex B", "Reflex C", "Iron Sight"],
-        operators: ["Recruit", "Maverick"]
+        operators: ["Striker", "Maverick"]
     },
 ```
 

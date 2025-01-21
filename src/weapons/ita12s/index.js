@@ -28,6 +28,8 @@ module.exports = {
     "Jackal",
     "Amaru",
     "Frost",
-    "Mira"
+    "Mira",
+    "Thunderbird",
+    "Striker"
   ]
 };

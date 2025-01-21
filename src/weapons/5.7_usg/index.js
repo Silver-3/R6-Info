@@ -15,7 +15,7 @@ module.exports = {
     "Custom Sight"
   ],
   "operators": [
-    "Recruit",
+    "Striker",
     "Ash",
     "Thermite",
     "Nokk",

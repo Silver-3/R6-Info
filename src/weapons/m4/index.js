@@ -28,7 +28,7 @@ module.exports = {
     "Iron Sight"
   ],
   "operators": [
-    "Recruit",
+    "Striker",
     "Maverick"
   ]
 };
