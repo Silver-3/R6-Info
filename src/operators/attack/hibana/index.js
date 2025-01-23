@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Stun grenades",
+    "Stun grenade",
     "Breach charge"
   ],
   "season": "Y1S4 - Red Crow"

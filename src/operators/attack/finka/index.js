@@ -28,8 +28,8 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "Spear.308",
-      "GP41",
+      "Spear .308",
+      "6P41",
       "SASG-12"
     ],
     "secondary": [

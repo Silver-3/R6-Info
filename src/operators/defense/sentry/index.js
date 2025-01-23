@@ -42,7 +42,7 @@ module.exports = {
     "Observation blocker",
     "Impact grenade",
     "Nitro cell",
-    "Proximity Alarm"
+    "Proximity alarm"
   ],
   "season": "Y9S2 - New Blood"
 };

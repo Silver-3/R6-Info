@@ -29,7 +29,7 @@ module.exports = {
   "guns": {
     "primary": [
       "MP5K",
-      "M59OA1"
+      "M590A1"
     ],
     "secondary": [
       "P226 MK 25",

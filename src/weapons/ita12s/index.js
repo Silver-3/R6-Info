@@ -30,6 +30,7 @@ module.exports = {
     "Frost",
     "Mira",
     "Thunderbird",
-    "Striker"
+    "Striker",
+    "Melusi"
   ]
 };

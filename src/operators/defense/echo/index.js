@@ -37,7 +37,7 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Impact grenades",
+    "Impact grenade",
     "Deployable shield"
   ],
   "season": "Y1S4 - Red Crow"

@@ -29,6 +29,6 @@ module.exports = {
   ],
   "operators": [
     "Finka",
-    "Thunberbird"
+    "Thunderbird"
   ]
 };

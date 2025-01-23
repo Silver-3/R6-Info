@@ -15,7 +15,7 @@ module.exports = {
     "Custom Sight"
   ],
   "operators": [
-    "Twich",
+    "Twitch",
     "Montagne",
     "Lion",
     "Ace",

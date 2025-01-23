@@ -1,22 +1,20 @@
 const path = require('path');
 
 module.exports = {
-  "name": "D-50",
+  "name": "Lusion",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 71,
+    "damage": 65,
     "firerate": 1,
-    "ammo": 7,
-    "maxammo": 64,
-    "difficulty": 3
+    "ammo": 12,
+    "maxammo": 91,
+    "difficulty": 2
   },
   "type": "Handgun",
   "scopes": [
     "Custom Sight"
   ],
   "operators": [
-    "Nokk",
-    "Valkyrie",
-    "Azami"
+    "Caveira"
   ]
 };

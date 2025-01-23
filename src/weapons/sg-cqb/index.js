@@ -25,7 +25,7 @@ module.exports = {
     "Iron Sight"
   ],
   "operators": [
-    "Twich",
+    "Twitch",
     "Lion",
     "Grim",
     "Doc",

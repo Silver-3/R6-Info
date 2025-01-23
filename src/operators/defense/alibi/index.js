@@ -32,7 +32,7 @@ module.exports = {
       "ACS12"
     ],
     "secondary": [
-      "Karatos .357",
+      "Keratos .357",
       "Bailiff 410"
     ]
   },

@@ -29,7 +29,7 @@ module.exports = {
   "guns": {
     "primary": [
       "AK-74M",
-      "M59OA1"
+      "M590A1"
     ],
     "secondary": [
       ".44 Vendetta"

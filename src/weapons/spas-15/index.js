@@ -25,7 +25,7 @@ module.exports = {
     "Iron Sight"
   ],
   "operators": [
-    "Caveria",
+    "Caveira",
     "Thunderbird"
   ]
 };

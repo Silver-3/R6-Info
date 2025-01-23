@@ -28,7 +28,7 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "M1O14",
+      "M1014",
       "556XI"
     ],
     "secondary": [

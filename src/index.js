@@ -3,3 +3,7 @@ module.exports = {
     ...require('./maps/index.js'),
     ...require('./weapons/index.js')
 };
+
+const a = require('./operators/index');
+
+console.log(a.getAllOperators())

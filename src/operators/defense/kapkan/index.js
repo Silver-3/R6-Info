@@ -38,7 +38,7 @@ module.exports = {
   },
   "gadgets": [
     "Bulletproof camera",
-    "Barbed Wire"
+    "Barbed wire"
   ],
   "season": "Release"
 };

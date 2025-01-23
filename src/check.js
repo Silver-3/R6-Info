@@ -280,6 +280,98 @@ function validateMaps(maps) {
     }
 }
 
+function validateOperatorGadgets(operators) {
+    let allClear = true;
+    let errorMessages = [];
+
+    const gadgets = [
+        "Proximity alarm",
+        "Observation blocker",
+        "Bulletproof camera",
+        "Impact grenade",
+        "Deployable shield",
+        "Breach charge",
+        "Claymore",
+        "Stun grenade",
+        "Smoke grenade",
+        "Frag grenade",
+        "Hard breach charge",
+        "Impact emp grenade",
+        "Nitro cell",
+        "Barbed wire"
+    ];
+
+    operators.forEach((operator) => {
+        operator.gadgets.forEach(gadget => {
+            if (!gadgets.includes(gadget)) {
+                errorMessages.push(`${operator.name} has invalid gadget: ${gadget}`);
+                allClear = false;
+            }
+        })
+    });
+
+    if (allClear) {
+        console.log("Operator Gadgets clear");
+    } else {
+        console.log("There were some errors with operator gadgets:");
+        errorMessages.forEach((msg) => console.log(msg));
+    }
+}
+
+function validateOperatorWeaponMappings(operators, weapons) {
+    let allClear = true;
+    let errorMessages = [];
+
+    operators.forEach((operator) => {
+        operator.guns.primary.forEach((primaryWeapon) => {
+            const weapon = weapons.find(w => w.name.toLowerCase() === primaryWeapon.toLowerCase());
+            if (primaryWeapon.includes('Shield')) return;
+            if (!weapon) {
+                errorMessages.push(`Primary weapon '${primaryWeapon}' for operator '${operator.name}' does not exist.`);
+                allClear = false;
+            } else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) {
+                errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${primaryWeapon}'.`);
+                allClear = false;
+            }
+        });
+
+        operator.guns.secondary.forEach((secondaryWeapon) => {
+            const weapon = weapons.find(w => w.name.toLowerCase() === secondaryWeapon.toLowerCase());
+            if (!weapon) {
+                errorMessages.push(`Secondary weapon '${secondaryWeapon}' for operator '${operator.name}' does not exist.`);
+                allClear = false;
+            } else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) {
+                errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${secondaryWeapon}'.`);
+                allClear = false;
+            }
+        });
+    });
+
+    weapons.forEach((weapon) => {
+        weapon.operators.forEach((operatorName) => {
+            const operator = operators.find(op => op.name.toLowerCase() === operatorName.toLowerCase());
+            if (!operator) {
+                errorMessages.push(`Operator '${operatorName}' listed in weapon '${weapon.name}' is unknown.`);
+                allClear = false;
+            } else {
+                const allOperatorWeapons = [...operator.guns.primary, ...operator.guns.secondary];
+                if (!allOperatorWeapons.map(w => w.toLowerCase()).includes(weapon.name.toLowerCase())) {
+                    errorMessages.push(`Weapon '${weapon.name}' listed for operator '${operatorName}' but is not in their weapon list.`);
+                    allClear = false;
+                }
+            }
+        });
+    });
+
+    if (allClear) {
+        console.log("Operator-weapon mappings are valid");
+    } else {
+        console.log("There were some errors with operator-weapon mappings:");
+        errorMessages.forEach(msg => console.log(msg));
+    }
+}
+
+
 function validateAll() {
     const operators = getOperators();
     const weapons = getWeapons();
@@ -288,6 +380,8 @@ function validateAll() {
     validateOperators(operators);
     validateWeapons(weapons);
     validateMaps(maps);
+    validateOperatorGadgets(operators);
+    validateOperatorWeaponMappings(operators, weapons);
 }
 
 validateAll();

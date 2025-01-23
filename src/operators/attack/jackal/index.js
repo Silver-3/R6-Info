@@ -34,7 +34,7 @@ module.exports = {
     ],
     "secondary": [
       "USP40",
-      "ITA1S2"
+      "ITA12S"
     ]
   },
   "gadgets": [

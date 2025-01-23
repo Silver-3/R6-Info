@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  "name": "0Ts-03",
+  "name": "OTs-03",
   "image": path.join(__dirname, './image.png'),
   "stats": {
     "damage": 71,

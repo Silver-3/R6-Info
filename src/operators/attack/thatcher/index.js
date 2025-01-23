@@ -30,7 +30,7 @@ module.exports = {
     "primary": [
       "AR33",
       "L85A2",
-      "M59OA1"
+      "M590A1"
     ],
     "secondary": [
       "P226 MK 25"

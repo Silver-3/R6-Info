@@ -35,7 +35,7 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Impact grenades",
+    "Impact grenade",
     "Proximity alarm"
   ],
   "season": "Y9S3 - Twin Shells"

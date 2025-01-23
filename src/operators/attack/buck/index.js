@@ -36,7 +36,7 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Stun grenades",
+    "Stun grenade",
     "Claymore"
   ],
   "season": "Y1S1 - Black Ice"
