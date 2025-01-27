@@ -174,6 +174,17 @@ const weapon = R6Info.randomWeapon();
 console.log(weapon.name);
 ```
 
+#### Getting a random weapon loadout
+```javascript
+const R6Info = require('@silver-3/r6-info');
+const randomLoadout = R6Info.randomLoadout('r4-c');
+
+console.log(randomLoadout);
+
+// Output
+// { scope: 'Holo C', barrel: 'Muzzle Brake', grip: 'Angled Grip' }
+```
+
 #### Getting all weapons
 ```javascript
 const R6Info = require('@silver-3/r6-info');

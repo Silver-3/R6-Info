@@ -223,6 +223,21 @@ function validateWeapons(weapons) {
             allClear = false;
         }
 
+        if (!weapon.scopes || weapon.scopes.length == 0) {
+            issues.push("scopes is empty");
+            allClear = false;
+        }
+
+        if (!weapon.barrels) {
+            issues.push("barrels is missing");
+            allClear = false;
+        }
+
+        if (!weapon.grips) {
+            issues.push("grips is missing");
+            allClear = false;
+        }
+
         if (
             !weapon.operators ||
             weapon.operators.length === 0 ||

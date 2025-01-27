@@ -14,6 +14,10 @@ module.exports = {
   "scopes": [
     "Custom Sight"
   ],
+  "barrels": [
+    "Suppressor"
+  ],
+  "grips": [],
   "operators": [
     "Dokkaebi",
     "Kali",

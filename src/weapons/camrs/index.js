@@ -29,6 +29,11 @@ module.exports = {
     "Reflex C",
     "Iron Sight"
   ],
+  "barrels": [
+    "Muzzle Brake",
+    "Suppressor"
+  ],
+  "grips": [],
   "operators": [
     "Buck",
     "Brava"

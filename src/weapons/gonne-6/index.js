@@ -10,10 +10,12 @@ module.exports = {
     "maxammo": 1,
     "difficulty": 1
   },
-  "type": "Unknown",
+  "type": "Hand Cannon",
   "scopes": [
     "Custom Sight"
   ],
+  "barrels": [],
+  "grips": [],
   "operators": [
     "Glaz",
     "Capitao",

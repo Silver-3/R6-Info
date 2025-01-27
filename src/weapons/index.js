@@ -68,8 +68,28 @@ function getAllWeapons() {
     return weaponArray;
 }
 
+/**
+ * 
+ * @param {String} weaponName 
+ * @returns {{scope: String, barrel: String, grip: String}}
+ */
+
+function randomLoadout(weaponName) {
+    const weapon = getWeapon(weaponName);
+
+    weapon.barrels = [...weapon.barrels, 'None'];
+    weapon.grips = [...weapon.grips, 'None'];
+
+    return {
+        scope: weapon.scopes ? weapon.scopes[Math.floor(Math.random() * weapon.scopes.length)] : 'None',
+        barrel: weapon.barrels ? weapon.barrels[Math.floor(Math.random() * weapon.barrels.length)] : 'None',
+        grip: weapon.grips ? weapon.grips[Math.floor(Math.random() * weapon.grips.length)] : 'None'
+    }
+}
+
 module.exports = {
     randomWeapon,
     getWeapon,
     getAllWeapons,
+    randomLoadout
 }

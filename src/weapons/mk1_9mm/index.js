@@ -14,6 +14,11 @@ module.exports = {
   "scopes": [
     "Custom Sight"
   ],
+  "barrels": [
+    "Muzzle Brake",
+    "Suppressor"
+  ],
+  "grips": [],
   "operators": [
     "Buck",
     "Iana",

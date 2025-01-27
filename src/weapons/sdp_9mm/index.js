@@ -14,6 +14,8 @@ module.exports = {
   "scopes": [
     "Custom Sight"
   ],
+  "barrels": [],
+  "grips": [],
   "operators": [
     "Gridlock",
     "Sens",

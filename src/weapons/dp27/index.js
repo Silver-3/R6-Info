@@ -25,6 +25,8 @@ module.exports = {
     "Reflex D",
     "Iron Sight"
   ],
+  "barrels": [],
+  "grips": [],
   "operators": [
     "Tachanka"
   ]

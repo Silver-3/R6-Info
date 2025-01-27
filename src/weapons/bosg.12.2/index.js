@@ -27,6 +27,12 @@ module.exports = {
     "Reflex C",
     "Iron Sight"
   ],
+  "barrels": [],
+  "grips": [
+    "Vertical Grip",
+    "Angled Grip",
+    "Horizontal Grip"
+  ],
   "operators": [
     "Dokkaebi",
     "Vigil"
