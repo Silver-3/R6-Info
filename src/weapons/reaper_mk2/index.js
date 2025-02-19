@@ -1,30 +1,27 @@
 const path = require('path');
 
 module.exports = {
-  "name": "GSH-18",
+  "name": "Reaper MK2",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 44,
-    "firerate": 1,
-    "ammo": 18,
-    "maxammo": 109,
-    "difficulty": 1
+    "damage": 31,
+    "firerate": 765,
+    "ammo": 33,
+    "maxammo": 133,
+    "difficulty": 5
   },
-  "type": "Handgun",
+  "type": "Machine Pustol",
   "scopes": [
     "Custom Sight"
   ],
   "barrels": [
+    "Flash Hider",
+    "Compensator",
     "Muzzle Brake",
     "Suppressor"
   ],
   "grips": [],
   "operators": [
-    "Fuze",
-    "Finka",
-    "Flores",
-    "Kapkan",
-    "Tachanka",
     "Rauora"
   ]
 };

@@ -41,6 +41,7 @@ module.exports = {
   "operators": [
     "Twitch",
     "Lion",
-    "Sens"
+    "Sens",
+    "Rauora"
   ]
 };

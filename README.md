@@ -1,7 +1,7 @@
 
 # R6-Info
 
-This package allows you to access information about any R6 operator or map, and more. Currently updated to Y9S4.2
+This package allows you to access information about any R6 operator or map, and more. Currently updated to Y10S1
 A discord bot that I have made with this package can be found [here](https://github.com/Silver-3/R6-operator)
 
 ## Installation
