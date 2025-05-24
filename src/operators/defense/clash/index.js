@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
   "name": "Clash",
   "ability": {
-    "name": "CCE Shield",
-    "description": "Extendable ecltro shield capable of slowing down enemies, causing damage over time."
+    "name": "CCE Shield MK2",
+    "description": "A collapsible shield that can anchor to the floor and slow enemies with electricity."
   },
   "icon": path.join(__dirname, './icon.png'),
   "specialties": [
-    "Inte;",
+    "Intel",
     "Crowd Control"
   ],
   "stats": {
@@ -28,7 +28,7 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "CCE Shield"
+      "CCE Shield MK2"
     ],
     "secondary": [
       "Super Shorty",
@@ -38,8 +38,7 @@ module.exports = {
   },
   "gadgets": [
     "Barbed wire",
-    "Impact grenade",
-    "Deployable shield"
+    "Impact grenade"
   ],
   "season": "Y3S3 - Grim Sky"
 };
