@@ -46,7 +46,7 @@ function getGadget(gadgetName) {
 
     if (gadgets[gadgetName]) return gadgets[gadgetName]
 
-    throw new Error(`Gadget (${mapName}) not found.`);
+    throw new Error(`Gadget (${gadgetName}) not found.`);
 }
 
 /**
