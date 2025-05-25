@@ -67,6 +67,5 @@ function getAllGadgets() {
 module.exports = {
     getGadget,
     randomGadget,
-    viewGadget,
     getAllGadgets
 };
