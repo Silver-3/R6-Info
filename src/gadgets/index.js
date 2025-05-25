@@ -41,8 +41,8 @@ function randomGadget(operator) {
  */
 
 function getGadget(gadgetName) {
-    if (!gadgetName) throw new Error("Map name is required");
-    gadgetName = gadgetName.toLowerCase();
+    if (!gadgetName) throw new Error("Gadget name is required");
+    gadgetName = gadgetName.toLowerCase().replace(' ', '_')
 
     if (gadgets[gadgetName]) return gadgets[gadgetName]
 
