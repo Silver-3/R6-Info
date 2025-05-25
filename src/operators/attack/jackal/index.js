@@ -7,6 +7,7 @@ module.exports = {
     "description": "Tracking optics that locates targets by revealing and identifying recent footsteps."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Map Control"

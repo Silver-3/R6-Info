@@ -7,6 +7,7 @@ module.exports = {
     "description": "Trowablle rolling device with a lighting system that projects a screen to obstruct visibility."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support",
     "Map Control"

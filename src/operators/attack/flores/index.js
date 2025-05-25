@@ -7,6 +7,7 @@ module.exports = {
     "description": "Remote control charge that anchors to a surface, becomes bulletproof, then detonates after a set time period."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

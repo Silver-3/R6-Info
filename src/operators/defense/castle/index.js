@@ -7,6 +7,7 @@ module.exports = {
     "description": "Sets bulletproof barricades that are more resistant than standard ones."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Support"

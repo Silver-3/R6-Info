@@ -7,6 +7,7 @@ module.exports = {
     "description": "Sets up a Crude Electrical Devicce that electrifies other gadgets and damages anything that comes within contact."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "anti-Gadget"

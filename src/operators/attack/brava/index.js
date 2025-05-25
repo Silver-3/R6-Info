@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deployable drone that either takes control of electronic devices or destroys them after a short delay."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

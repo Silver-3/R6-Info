@@ -7,6 +7,7 @@ module.exports = {
     "description": "A remote controlled bulletproof camera armed with a high-energy laser."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intl"

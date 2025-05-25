@@ -7,6 +7,7 @@ module.exports = {
     "description": "Throwable device that sticks to surfaces and propels a set of sharp blades shortly after detecting nearby opponents."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Trapper"

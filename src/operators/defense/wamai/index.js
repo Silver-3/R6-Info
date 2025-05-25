@@ -7,6 +7,7 @@ module.exports = {
     "description": "Throwable device that sticks to a surface, captures an incoming projectile, then detonates it and self-destructs."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Trapper"

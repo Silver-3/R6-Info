@@ -7,6 +7,7 @@ module.exports = {
     "description": "Calls Defenders phones to compromise their locations and interrupt the use of Observation Tools."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Map Control"

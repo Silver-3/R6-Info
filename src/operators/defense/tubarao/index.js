@@ -7,6 +7,7 @@ module.exports = {
     "description": "Throwable device that stcks to surfaces and releases a freezing gas, deactivating devices and slowing enemies."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Crowd Control"

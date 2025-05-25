@@ -7,6 +7,7 @@ module.exports = {
     "description": "Double barrel launcher that can fire both concussion and impact grenades."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Brach",
     "Anti-Gadget"

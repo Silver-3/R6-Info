@@ -7,6 +7,7 @@ module.exports = {
     "description": "Ballistic shield that busts through breakable defenses and folds up for using during rappel."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Front-Line"

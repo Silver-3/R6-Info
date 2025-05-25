@@ -7,6 +7,7 @@ module.exports = {
     "description": "The EE-ONE-D detects enemy movement, tagging their position during the scan."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Map control"

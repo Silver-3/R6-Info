@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deploys a remote-controlled holographic copy of Iana to fool oppents and gather intel."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Support"

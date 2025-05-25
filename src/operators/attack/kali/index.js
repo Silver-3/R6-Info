@@ -7,6 +7,7 @@ module.exports = {
     "description": "Under-barrel mechanical projectile that explodes within a set radius to destroy gadgets on both sides of breaking and reinforced surfaces."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Support"

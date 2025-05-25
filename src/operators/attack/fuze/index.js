@@ -7,6 +7,7 @@ module.exports = {
     "description": "Charge that' deployed on soft or reinforced surfaces to clear Operators and devices on the other side."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget"
   ],

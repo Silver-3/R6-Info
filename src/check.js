@@ -57,6 +57,21 @@ function getMaps() {
     return maps;
 }
 
+function getGadgets() {
+    const gadgetsDir = path.join(__dirname, "gadgets");
+    const gadgetNames = fs
+        .readdirSync(gadgetsDir)
+        .filter((file) => fs.statSync(path.join(gadgetsDir, file)).isDirectory());
+    const gadgets = [];
+
+    gadgetNames.forEach((name) => {
+        const gadgetPath = path.join(gadgetsDir, name, "index.js");
+        gadgets.push(require(gadgetPath));
+    });
+
+    return gadgets;
+}
+
 function validateOperators(operators) {
     let allClear = true;
     let errorMessages = [];
@@ -88,6 +103,12 @@ function validateOperators(operators) {
         if (operator.icon && !fs.existsSync(operator.icon)) {
             console.log(operator.icon);
             issues.push("icon path does not exist");
+            allClear = false;
+        }
+
+        if (operator.image && !fs.existsSync(operator.image)) {
+            console.log(operator.image);
+            issues.push("image path does not exist");
             allClear = false;
         }
 
@@ -299,26 +320,14 @@ function validateOperatorGadgets(operators) {
     let allClear = true;
     let errorMessages = [];
 
-    const gadgets = [
-        "Proximity alarm",
-        "Observation blocker",
-        "Bulletproof camera",
-        "Impact grenade",
-        "Deployable shield",
-        "Breach charge",
-        "Claymore",
-        "Stun grenade",
-        "Smoke grenade",
-        "Frag grenade",
-        "Hard breach charge",
-        "Impact emp grenade",
-        "Nitro cell",
-        "Barbed wire"
-    ];
+    const gadgets = getGadgets().map(gadget => ({
+        name: gadget.name.toLowerCase().replaceAll(' ', ''),
+        image: gadget.image
+    }));
 
     operators.forEach((operator) => {
         operator.gadgets.forEach(gadget => {
-            if (!gadgets.includes(gadget)) {
+            if (!gadgets.some(g => g.name === gadget.toLowerCase().replaceAll(' ', ''))) {
                 errorMessages.push(`${operator.name} has invalid gadget: ${gadget}`);
                 allClear = false;
             }
@@ -385,7 +394,6 @@ function validateOperatorWeaponMappings(operators, weapons) {
         errorMessages.forEach(msg => console.log(msg));
     }
 }
-
 
 function validateAll() {
     const operators = getOperators();

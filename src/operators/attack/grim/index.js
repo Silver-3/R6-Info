@@ -7,6 +7,7 @@ module.exports = {
     "description": "Launcher that fires a canister, releasing a swarm of bots that reveals opponents passing through it for a limited time."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map Control"

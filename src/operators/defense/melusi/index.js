@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deployable device with a bulletproof shell and exposed center that emits sound to slow down opponents in range."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Crowd Control"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Toxic mines that inject a compound, injuring opponents and limiting their speed."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Trapper"

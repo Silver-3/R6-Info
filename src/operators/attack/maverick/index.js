@@ -7,6 +7,7 @@ module.exports = {
     "description": "Blowtorch capable of burning holes through reinforced walls at an almost inaudible level."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Front-Line"

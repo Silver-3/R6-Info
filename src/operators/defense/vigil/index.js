@@ -7,6 +7,7 @@ module.exports = {
     "description": "Vigil scans surrounding devices to whipe his image from cameras and drones."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Crowd Control"

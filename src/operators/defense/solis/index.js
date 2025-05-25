@@ -7,6 +7,7 @@ module.exports = {
     "description": "Scanner that detects opponent electronic devices, with an Overclock that identifies them."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

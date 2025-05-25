@@ -7,6 +7,7 @@ module.exports = {
     "description": "Fires an explosive Breach Round that burrows into a surface and utomatically detonates."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Front-Line"

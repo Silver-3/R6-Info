@@ -7,6 +7,7 @@ module.exports = {
     "description": "Sets booby traps on windows and door frames."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Trapper"

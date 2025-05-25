@@ -7,6 +7,7 @@ module.exports = {
     "description": "A pair of robots piloted remotely as an Operator and Observation tool, which can be swapped."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

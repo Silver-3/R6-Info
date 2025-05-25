@@ -7,6 +7,7 @@ module.exports = {
     "description": "Fast dash that allows for faster roaming, breaches breakable walls, and pushes back opponents."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support"
   ],

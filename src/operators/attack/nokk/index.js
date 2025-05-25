@@ -7,6 +7,7 @@ module.exports = {
     "description": "Counter-intel that wipes their presence from Observation Tools."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map Control"

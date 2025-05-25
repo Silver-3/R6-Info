@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deploys holograms of Alibi and tags hostiles when fired upon."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Trapper"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Uses EMP Grenades to disable any electonics in range."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Support"

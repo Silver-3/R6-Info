@@ -10,6 +10,7 @@ const operators = {attack: {}, defense: {}};
  * @property {string} ability.name
  * @property {string} ability.description
  * @property {string} icon 
+ * @property {string} image
  * @property {string[]} specialties 
  * @property {Object} stats 
  * @property {number} stats.health

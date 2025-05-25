@@ -7,6 +7,7 @@ module.exports = {
     "description": "Sets remote detonated toxic gas charges."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Trapper"

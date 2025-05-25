@@ -7,6 +7,7 @@ module.exports = {
     "description": "Small probe that reveals an Opponent and Deimos to each other for a limited time."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Map Control"

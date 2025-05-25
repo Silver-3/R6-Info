@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deployable device that gives an HP boost or offers a revive to a downed Operator in proximity."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support"
   ],

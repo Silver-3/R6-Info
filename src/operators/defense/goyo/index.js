@@ -7,6 +7,7 @@ module.exports = {
     "description": "Incendiary bomb that can be deployed on floors or walls and explodes when destroyed."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Trapper"

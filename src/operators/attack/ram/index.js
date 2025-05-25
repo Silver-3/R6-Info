@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deployable mini-tank that moves along a set path destroying devices and breakable surfaces in its way."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Anti-Gadget"

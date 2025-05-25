@@ -7,6 +7,7 @@ module.exports = {
     "description": "Drone that manually fires lasers to destroy opponent devices."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

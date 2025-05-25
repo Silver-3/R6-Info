@@ -7,6 +7,7 @@ module.exports = {
     "description": "Detects heartbeats at a short distance through obstacles."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Suppot"

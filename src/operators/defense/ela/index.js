@@ -7,6 +7,7 @@ module.exports = {
     "description": "Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Crowd Control",
     "Trapper"

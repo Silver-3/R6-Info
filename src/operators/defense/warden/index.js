@@ -7,6 +7,7 @@ module.exports = {
     "description": "Eyewear that improves visibility in smoke while standing still. Can also be activated to protect again or reduce flash blindness."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

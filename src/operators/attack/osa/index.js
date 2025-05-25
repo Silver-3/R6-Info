@@ -7,6 +7,7 @@ module.exports = {
     "description": "Transparent bulletproof shield that can be carried for deployed on floors and window frames."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Can expand his Extendable Shield to offer full protection while standing."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Caveira's predatory stealth, the \"Silent Step,\" allows her to lurk on her prey, almost inaudible, until it' too late."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Crowd Control"

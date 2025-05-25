@@ -7,6 +7,7 @@ module.exports = {
     "description": "Sets an exothermic charge that destroys reinforced walls."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Support"

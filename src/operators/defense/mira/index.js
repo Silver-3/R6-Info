@@ -7,6 +7,7 @@ module.exports = {
     "description": "Deploys a one-way bulletproof mirror on breakable and reinforced walls. Can also be ejected to create a murder hole."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

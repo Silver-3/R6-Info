@@ -7,6 +7,7 @@ module.exports = {
     "description": "Throwable device that sticks to surfaces and releases a fear-inducing gas when it detects nearby opponents."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Crowd Control",
     "Trapper"

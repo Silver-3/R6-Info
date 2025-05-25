@@ -7,6 +7,7 @@ module.exports = {
     "description": "A collapsible shield that can anchor to the floor and slow enemies with electricity."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Crowd Control"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "A high-tensile grappling gun used for fast access to rappel points and hatches, or to enter via exterior windows at limited distances."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map Control"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Operator."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Crowd Control"

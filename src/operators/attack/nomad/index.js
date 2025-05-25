@@ -7,6 +7,7 @@ module.exports = {
     "description": "Rifle attachment shooting an adhesive repulsion device that deonates by proximity."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map Control"

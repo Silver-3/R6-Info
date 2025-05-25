@@ -7,6 +7,7 @@ module.exports = {
     "description": "Launcher firing havy incendiary grenades with a timed fuse activated on the first bounce. (Lord Tachanka)"
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Crowd Control"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Thrown gadget that deploys barbed mats capable of shlowing down and hurting enemies to traverse them."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support",
     "Map Control"

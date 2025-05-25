@@ -7,6 +7,7 @@ module.exports = {
     "description": "A launcher that fires retractable bulletproof panels onto doorframes"
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support",
     "Map Control"

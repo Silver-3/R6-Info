@@ -7,6 +7,7 @@ module.exports = {
     "description": "Laser-generating device set on walls or entry points that deactivates after damaging gadgets or opponents, and is reactivatable."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Anti-Gadget"

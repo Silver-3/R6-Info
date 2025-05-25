@@ -7,6 +7,7 @@ module.exports = {
     "description": "Jammer which makes electronic gadgets in range malfunction."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Crowd-Control"

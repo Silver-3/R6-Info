@@ -7,6 +7,7 @@ module.exports = {
     "description": "Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map Control"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Can set up \"Black Eye\" cameras, feed accessible by whole team via observation tools."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

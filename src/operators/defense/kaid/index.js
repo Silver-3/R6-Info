@@ -7,6 +7,7 @@ module.exports = {
     "description": "Electrifies reinforced walls and hatches, barbed wire and deployable shields in its affected area."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Anti-Gadget"

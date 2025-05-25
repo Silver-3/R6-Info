@@ -7,6 +7,7 @@ module.exports = {
     "description": "Triggers the flash attached to his ballistic shield to temporaily blind enemies."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
     "Map-Control"

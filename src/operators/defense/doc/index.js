@@ -7,6 +7,7 @@ module.exports = {
     "description": "Fires a shot that provides Doc and his team with a health boost or revive from a distance."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support"
   ],

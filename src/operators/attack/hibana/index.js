@@ -7,6 +7,7 @@ module.exports = {
     "description": "A 40mm grenade launcher firing explsive pallets that can be detonated from a distance."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Front-Line"

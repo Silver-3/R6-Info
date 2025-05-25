@@ -7,6 +7,7 @@ module.exports = {
     "description": "Throwable device that sticks to surfaces and releases a gas that solidifers to create a barrier."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
     "Support"

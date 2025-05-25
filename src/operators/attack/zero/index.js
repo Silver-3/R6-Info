@@ -7,6 +7,7 @@ module.exports = {
     "description": "Launcher that deploys cameras which can pierce through breakable and reinforced surfaces to surveil either side and shoot a laser."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

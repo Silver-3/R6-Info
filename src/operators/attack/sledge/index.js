@@ -7,6 +7,7 @@ module.exports = {
     "description": "Uses a Breaching Hammer to breach through destructible surfaces."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Anti-Gadget"

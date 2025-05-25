@@ -7,6 +7,7 @@ module.exports = {
     "description": "Launches autonomous bots that latch onto nearby enemy drones, hijacking their controls."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Intel"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Toggles a magnifcation scope with sophisticated image sensors outlining long range marks, even through smoke."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

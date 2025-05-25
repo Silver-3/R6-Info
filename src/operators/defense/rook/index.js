@@ -7,6 +7,7 @@ module.exports = {
     "description": "Drops a supply bag full of armor plates for his team to use."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support"
   ],

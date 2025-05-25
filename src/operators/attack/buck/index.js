@@ -7,6 +7,7 @@ module.exports = {
     "description": "Toggles under-barrel shotgun attachment on his main weapon."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Support"

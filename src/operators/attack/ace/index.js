@@ -7,6 +7,7 @@ module.exports = {
     "description": "Thrown gadget that deploys hydraulic pressure pellets to breach breakable and reinforced surfaces."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Breach",
     "Anti-Gadget"

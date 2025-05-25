@@ -7,6 +7,7 @@ module.exports = {
     "description": "Uses an Active Defense system to intercept grenades before they detonate."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
     "Support"

@@ -7,6 +7,7 @@ module.exports = {
     "description": "Uses the Electronics Detector to locate any electronics in range through obstacles such as walls."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
     "Support"

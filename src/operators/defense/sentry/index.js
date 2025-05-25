@@ -7,6 +7,7 @@ module.exports = {
     "description": "Equips two gadets instead of a gadget and an ability. Can select any gadget on the team, but not the same one twice."
   },
   "icon": path.join(__dirname, './icon.png'),
+  "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Support"
   ],
