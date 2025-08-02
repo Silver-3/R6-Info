@@ -202,4 +202,4 @@ console.log(R6Info.getAllWeapons()); // returns all weapons
 ## Support
 
 Once again I have created a discord bot with this package that you can checkout [here](https://github.com/Silver-3/R6-operator)
-For any support, dm `.silver_3` on discord and I will try to help you
+For any support, dm `.silver_3.` on discord and I will try to help you
