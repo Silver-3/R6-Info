@@ -33,7 +33,6 @@ module.exports = {
       "SASG-12"
     ],
     "secondary": [
-      "Bailiff 410",
       "5.7 USG"
     ]
   },

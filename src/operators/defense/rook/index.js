@@ -34,7 +34,8 @@ module.exports = {
     ],
     "secondary": [
       "LFP586",
-      "P9"
+      "P9",
+      "Reaper MK2"
     ]
   },
   "gadgets": [

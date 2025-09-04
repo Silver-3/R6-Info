@@ -1,16 +1,16 @@
 const path = require('path');
 
 module.exports = {
-  "name": "MP5",
+  "name": "Glaive-12",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 27,
-    "firerate": 800,
-    "ammo": 30,
-    "maxammo": 181,
-    "difficulty": 2
+    "damage": 63,
+    "firerate": 1,
+    "ammo": 4,
+    "maxammo": 29,
+    "difficulty": 3
   },
-  "type": "Submachine Gun",
+  "type": "Shotgun",
   "scopes": [
     "Red Dot A",
     "Red Dot B",
@@ -24,21 +24,13 @@ module.exports = {
     "Reflex C",
     "Iron Sight"
   ],
-  "barrels": [
-    "Flash Hider",
-    "Compensator",
-    "Muzzle Brake",
-    "Suppressor",
-    "Extended Barrel"
-  ],
+  "barrels": [],
   "grips": [
     "Vertical Grip",
     "Angled Grip",
     "Horizontal Grip"
   ],
   "operators": [
-    "Doc",
-    "Rook",
-    "Melusi"
+    "Denari"
   ]
 };

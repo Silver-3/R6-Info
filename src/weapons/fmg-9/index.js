@@ -37,6 +37,7 @@ module.exports = {
   "grips": [],
   "operators": [
     "Nokk",
-    "Smoke"
+    "Smoke",
+    "Denari"
   ]
 };

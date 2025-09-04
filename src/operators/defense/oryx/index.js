@@ -33,7 +33,8 @@ module.exports = {
     ],
     "secondary": [
       "Bailiff 410",
-      "USP40"
+      "USP40",
+      "Reaper MK2"
     ]
   },
   "gadgets": [

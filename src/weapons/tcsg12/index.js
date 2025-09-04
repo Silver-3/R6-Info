@@ -37,6 +37,7 @@ module.exports = {
   ],
   "operators": [
     "Kaid",
-    "Goyo"
+    "Goyo",
+    "Sentry"
   ]
 };

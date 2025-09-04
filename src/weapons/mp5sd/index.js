@@ -12,9 +12,6 @@ module.exports = {
   },
   "type": "Submachine Gun",
   "scopes": [
-    "Magnified A",
-    "Magnified B",
-    "Magnified C",
     "Red Dot A",
     "Red Dot B",
     "Red Dot C",

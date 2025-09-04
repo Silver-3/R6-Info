@@ -34,7 +34,8 @@ module.exports = {
     ],
     "secondary": [
       "Keratos .357",
-      "P12"
+      "P12",
+      "Super Shorty"
     ]
   },
   "gadgets": [

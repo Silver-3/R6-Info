@@ -25,6 +25,7 @@ module.exports = {
     "Kali",
     "Smoke",
     "Mute",
-    "Tubarao"
+    "Tubarao",
+    "Denari"
   ]
 };

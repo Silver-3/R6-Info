@@ -34,7 +34,8 @@ module.exports = {
     ],
     "secondary": [
       "M45 MEUSOC",
-      "5.7 USG"
+      "5.7 USG",
+      "Reaper MK2"
     ]
   },
   "gadgets": [

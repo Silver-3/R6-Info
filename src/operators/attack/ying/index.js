@@ -33,7 +33,8 @@ module.exports = {
       "SIX12"
     ],
     "secondary": [
-      "Q-929"
+      "Q-929",
+      "Reaper MK2"
     ]
   },
   "gadgets": [

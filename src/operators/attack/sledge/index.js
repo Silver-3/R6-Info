@@ -33,7 +33,8 @@ module.exports = {
       "L85A2"
     ],
     "secondary": [
-      "P226 MK 25"
+      "P226 MK 25",
+      "Reaper MK2"
     ]
   },
   "gadgets": [

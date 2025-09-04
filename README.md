@@ -1,7 +1,7 @@
 
 # R6-Info
 
-This package allows you to access information about any R6 operator or map, and more. Currently updated to Y10S2
+This package allows you to access information about any R6 operator or map, and more. Currently updated to Y10S3
 A discord bot that I have made with this package can be found [here](https://github.com/Silver-3/R6-operator)
 
 ## Installation
@@ -17,27 +17,31 @@ npm install @silver-3/r6-info
 #### Layout of an operator
 ```batch
 {
-  name: 'Sledge',
+  name: 'Denari',
   ability: {
-    name: 'Breaching Hammer',
-    description: 'Uses a Breaching Hammer to breach through destructible surfaces.'
+    name: 'T.R.I.P. Connector',
+    description: 'Throwable devices that link into a precise laser network to secure territory for Denari.'
   },
-  icon: 'FILE_PATH_TO_IMAGE',
-  specialties: [ 'Breach', 'Anti-Gadget' ],
-  stats: { health: 2, speed: 2, difficulty: 1 },
+  icon: 'FILE_PATH_TO_ICON',
+  image: 'FILE_PATH_TO_IMAGE',
+  specialties: [ 'Anti-Entry', 'Crowd Control' ],
+  stats: { health: 1, speed: 3, difficulty: 3 },
   bio: {
-    realname: 'Seamus Cowden',
-    nickname: 'Sledge',
-    org: 'SAS',
-    squad: 'Redhammer',
-    height: '1.92m',
-    weight: '95kg',
-    dateofbirth: 'April 2nd (Age 35)',
-    placeofbirth: 'John O’Groats, Scotland'
+    realname: 'Leon Winzenried',
+    nickname: 'Denari',
+    org: 'Nighthaven',
+    squad: 'Nighthaven',
+    height: '1.90m',
+    weight: '73kg',
+    dateofbirth: 'November 30th (Age 38)',
+    placeofbirth: 'Lugano, Switzerland'
   },
-  guns: { primary: [ 'M590A1', 'L85A2' ], secondary: [ 'P226 MK 25' ] },
-  gadgets: [ 'Frag grenade', 'Stun grenade', 'Impact emp grenade' ],
-  season: 'Release'
+  guns: {
+    primary: [ 'Scorpion Evo 3 A1', 'FMG-9' ],
+    secondary: [ 'Glaive-12', 'P226 MK 25' ]
+  },
+  gadgets: [ 'Observation blocker', 'Deployable Shield' ],
+  season: 'Y10S3 - High Stakes'
 }
 ```
 
@@ -140,19 +144,29 @@ console.log(R6Info.getAllMaps()); // returns all maps
 #### Layout of an weapon
 ```batch
 {
-        name: "M4",
-        icon: 'FILE_PATH_TO_IMAGE',
-        stats: {
-            damage: 44,
-            firerate: 750,
-            ammo: 30,
-            maxammo: 181,
-            difficulty: 2
-        },
-        type: "Assault Rifle",
-        scopes: ["Magnified A", "Magnified B", "Magnified C", "Red Dot A", "Red Dot B", "Red Dot C", "Holo A", "Holo B", "Holo C", "Holo D", "Reflex A", "Reflex B", "Reflex C", "Iron Sight"],
-        operators: ["Striker", "Maverick"]
-    },
+  name: 'R4-C',
+  image: 'FILE_PATH_TO_IMAGE',
+  stats: { damage: 39, firerate: 860, ammo: 25, maxammo: 151, difficulty: 4 },
+  type: 'Assault Rifle',
+  scopes: [
+    'Magnified A', 'Magnified B',
+    'Magnified C', 'Red Dot A',
+    'Red Dot B',   'Red Dot C',
+    'Holo A',      'Holo B',
+    'Holo C',      'Holo D',
+    'Reflex A',    'Reflex B',
+    'Reflex C',    'Iron Sight'
+  ],
+  barrels: [
+    'Flash Hider',
+    'Compensator',
+    'Muzzle Brake',
+    'Suppressor',
+    'Extended Barrel'
+  ],
+  grips: [ 'Vertical Grip', 'Angled Grip', 'Horizontal Grip' ],
+  operators: [ 'Ash', 'Ram' ]
+}
 ```
 
 #### Geting an weapon

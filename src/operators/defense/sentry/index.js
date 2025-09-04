@@ -29,7 +29,8 @@ module.exports = {
   "guns": {
     "primary": [
       "Commando 9",
-      "M870"
+      "M870",
+      "TCSG12"
     ],
     "secondary": [
       "C75 Auto",

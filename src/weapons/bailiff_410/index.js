@@ -21,7 +21,6 @@ module.exports = {
     "Doc",
     "Maestro",
     "Alibi",
-    "Oryx",
-    "Fenrir"
+    "Oryx"
   ]
 };

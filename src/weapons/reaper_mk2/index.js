@@ -22,6 +22,11 @@ module.exports = {
   ],
   "grips": [],
   "operators": [
-    "Rauora"
+    "Rauora",
+    "Sledge",
+    "Oryx",
+    "Pulse",
+    "Ying",
+    "Rook"
   ]
 };

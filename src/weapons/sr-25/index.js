@@ -40,6 +40,7 @@ module.exports = {
   ],
   "operators": [
     "Blackbeard",
-    "Flores"
+    "Flores",
+    "Striker"
   ]
 };
