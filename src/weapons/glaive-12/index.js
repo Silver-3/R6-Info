@@ -4,10 +4,10 @@ module.exports = {
   "name": "Glaive-12",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 63,
+    "damage": 67,
     "firerate": 1,
     "ammo": 4,
-    "maxammo": 29,
+    "maxammo": 44,
     "difficulty": 3
   },
   "type": "Shotgun",

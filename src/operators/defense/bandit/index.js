@@ -33,7 +33,8 @@ module.exports = {
       "M870"
     ],
     "secondary": [
-      "P12"
+      "P12",
+      "Keratos .357"
     ]
   },
   "gadgets": [

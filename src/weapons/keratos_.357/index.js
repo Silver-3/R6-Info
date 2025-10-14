@@ -22,6 +22,7 @@ module.exports = {
   "operators": [
     "Maestro",
     "Alibi",
-    "Wamai"
+    "Wamai",
+    "Bandit"
   ]
 };

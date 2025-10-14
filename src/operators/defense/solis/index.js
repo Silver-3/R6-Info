@@ -38,7 +38,7 @@ module.exports = {
   },
   "gadgets": [
     "Proximity alarm",
-    "Bulletproof camera"
+    "Impact grenade"
   ],
   "season": "Y7S4 - Solar Raid"
 };

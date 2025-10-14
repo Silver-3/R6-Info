@@ -33,7 +33,8 @@ module.exports = {
       "416-C Carbine"
     ],
     "secondary": [
-      "P12"
+      "P12",
+      "P-10C"
     ]
   },
   "gadgets": [

@@ -21,6 +21,7 @@ module.exports = {
   "grips": [],
   "operators": [
     "Clash",
-    "Warden"
+    "Warden",
+    "Jager"
   ]
 };
