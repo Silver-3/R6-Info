@@ -4,7 +4,7 @@ module.exports = {
   "name": "AUG A3",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 40,
+    "damage": 36,
     "firerate": 700,
     "ammo": 31,
     "maxammo": 187,

@@ -1,6 +1,40 @@
 const path = require("path");
 const fs = require("fs");
 
+/**
+ * @typedef {Object} operatorObject
+ * @property {string} name 
+ * @property {Object} ability 
+ * @property {string} ability.name
+ * @property {string} ability.description
+ * @property {string} icon 
+ * @property {string} image
+ * @property {string[]} specialties 
+ * @property {Object} stats 
+ * @property {number} stats.health
+ * @property {number} stats.speed 
+ * @property {number} stats.difficulty 
+ * @property {Object} bio 
+ * @property {string} bio.realname
+ * @property {string} bio.nickname
+ * @property {string} bio.org 
+ * @property {string} bio.squad 
+ * @property {string} bio.height 
+ * @property {string} bio.weight 
+ * @property {string} bio.dateofbirth 
+ * @property {string} bio.placeofbirth 
+ * @property {Object} guns 
+ * @property {string[]} guns.primary 
+ * @property {string[]} guns.secondary 
+ * @property {string[]} gadgets 
+ * @property {string} season 
+ */
+
+/**
+ * 
+ * @returns {operatorObject}
+ */
+
 function getOperators() {
     const operatorsDir = path.join(__dirname, "operators");
     const teamDirs = fs
@@ -23,6 +57,26 @@ function getOperators() {
     return operators;
 }
 
+/**
+ * @typedef {Object} weaponObject
+ * @property {string} name
+ * @property {string} image 
+ * @property {Object} stats 
+ * @property {number} stats.damage
+ * @property {number} stats.firerate 
+ * @property {number} stats.ammo
+ * @property {number} stats.maxammo
+ * @property {number} stats.difficulty
+ * @property {string} type
+ * @property {string[]} scopes
+ * @property {string[]} operators
+ */
+
+/**
+ * 
+ * @returns {Array<weaponObject>}
+ */
+
 function getWeapons() {
     const weaponsDir = path.join(__dirname, "weapons");
     const weaponNames = fs
@@ -34,6 +88,17 @@ function getWeapons() {
         return require(weaponPath);
     });
 }
+
+/**
+ * @typedef {Object} mapObject
+ * @property {string} name 
+ * @property {string} image 
+ */
+
+/**
+ * 
+ * @returns {Array<mapObject>}
+ */
 
 function getMaps() {
     const mapsDir = path.join(__dirname, "maps");
@@ -57,6 +122,17 @@ function getMaps() {
     return maps;
 }
 
+/**
+ * @typedef {Object} gadgetObject
+ * @property {string} name 
+ * @property {string} image 
+ */
+
+/**
+ * 
+ * @returns {Array<gadgetObject>}
+ */
+
 function getGadgets() {
     const gadgetsDir = path.join(__dirname, "gadgets");
     const gadgetNames = fs
@@ -72,252 +148,132 @@ function getGadgets() {
     return gadgets;
 }
 
+/**
+ * 
+ * @param {Array<operatorObject>} operators
+ */
+
 function validateOperators(operators) {
-    let allClear = true;
     let errorMessages = [];
 
     operators.forEach((operator) => {
         let issues = [];
 
-        if (!operator) {
-            issues.push("operator is undefined");
-            allClear = false;
-        }
+        if (!operator) issues.push("operator object is missing");
+        if (!operator.name || operator.name.trim() === "") issues.push("operator name is empty or missing");
+        if (!operator.ability || !operator.ability.name || operator.ability.name.trim() === "" || !operator.ability.description || operator.ability.description.trim() === "") issues.push("operator ability name or description is empty or missing");
 
-        if (!operator.name || operator.name.trim() === "") {
-            issues.push("name is empty");
-            allClear = false;
-        }
+        if (!operator.image || (operator.icon && !fs.existsSync(operator.icon))) issues.push("operator icon path does not exist or is missing");
+        if (!operator.image || (operator.image && !fs.existsSync(operator.image))) issues.push("operator image path does not exist or is missing");
 
-        if (
-            !operator.ability ||
-            !operator.ability.name ||
-            operator.ability.name.trim() === "" ||
-            !operator.ability.description ||
-            operator.ability.description.trim() === ""
-        ) {
-            issues.push("ability name or description is empty");
-            allClear = false;
-        }
-
-        if (operator.icon && !fs.existsSync(operator.icon)) {
-            console.log(operator.icon);
-            issues.push("icon path does not exist");
-            allClear = false;
-        }
-
-        if (operator.image && !fs.existsSync(operator.image)) {
-            console.log(operator.image);
-            issues.push("image path does not exist");
-            allClear = false;
-        }
-
-        if (
-            !operator.specialties ||
-            operator.specialties.length === 0 ||
-            operator.specialties.some((s) => s.trim() === "")
-        ) {
-            issues.push("specialties are empty");
-            allClear = false;
+        const expectedSpecialties = ["Intel", "Anti-Gadget", "Support", "Front-Line", "Map Control", "Breach", "Trapper", "Intel", "Anti-Gadget", "Support", "Anti-Entry", "Crowd Control"];
+        if (!operator.specialties || operator.specialties.length === 0 || operator.specialties.some((s) => s.trim() === "")) issues.push("operator specialties are empty or missing");
+        else {
+            operator.specialties.forEach(speciality => {
+                if (!expectedSpecialties.includes(speciality)) issues.push(`operator speciality '${speciality}' is unknown or does not match`);
+            });
         }
 
         if (operator.stats) {
             for (const [key, value] of Object.entries(operator.stats)) {
-                if (value <= 0) {
-                    issues.push(`${key}: ${value}`);
-                    allClear = false;
-                }
+                if (value <= 0) issues.push(`${key}: ${value}`);
             }
-        } else {
-            issues.push("stats are missing");
-            allClear = false;
-        }
+        } else issues.push("operator stats are missing");
 
-        if (!operator.bio) {
-            issues.push("bio is missing");
-            allClear = false;
-        } else {
-            const requiredBioFields = [
-                "realname",
-                "nickname",
-                "org",
-                "squad",
-                "height",
-                "weight",
-                "dateofbirth",
-                "placeofbirth",
-            ];
-
+        const requiredBioFields = ["realname", "nickname", "org", "squad", "height", "weight", "dateofbirth", "placeofbirth"];
+        if (operator.bio) {
             requiredBioFields.forEach((field) => {
-                if (!operator.bio[field] || operator.bio[field].trim() === "") {
-                    issues.push(`${field} is missing or empty in bio`);
-                    allClear = false;
-                }
+                if (!operator.bio[field] || operator.bio[field].trim() == "") issues.push(`operator bio field ${field} is missing or empty`);
             });
-        }
+        } else issues.push("operator bio is missing or empty");
 
-        if (!operator.guns) {
-            issues.push("guns are missing");
-            allClear = false;
-        } else {
-            if (
-                !operator.guns.primary ||
-                operator.guns.primary.length === 0 ||
-                operator.guns.primary.some((g) => g.trim() === "")
-            ) {
-                issues.push("primary guns list is empty");
-                allClear = false;
-            }
-            if (
-                !operator.guns.secondary ||
-                operator.guns.secondary.length === 0 ||
-                operator.guns.secondary.some((g) => g.trim() === "")
-            ) {
-                issues.push("secondary guns list is empty");
-                allClear = false;
-            }
-        }
+        if (operator.guns) {
+            if (!operator.guns.primary || operator.guns.primary.length === 0 || operator.guns.primary.some((g) => g.trim() === "")) issues.push("primary guns list is empty");
+            if (!operator.guns.secondary || operator.guns.secondary.length === 0 || operator.guns.secondary.some((g) => g.trim() === "")) issues.push("secondary guns list is empty");
+            
+        } else issues.push("operator weapons are missing or empty");
 
-        if (
-            !operator.gadgets ||
-            operator.gadgets.length === 0 ||
-            operator.gadgets.some((g) => g.trim() === "")
-        ) {
-            issues.push("gadgets list is empty");
-            allClear = false;
-        }
-
-        if (!operator.season || operator.season.trim() === "") {
-            issues.push("season is empty");
-            allClear = false;
-        }
-
-        if (issues.length > 0) {
-            errorMessages.push(`${operator.name}: ${issues.join(", ")}`);
-        }
+        if (!operator.gadgets || operator.gadgets.length === 0 || operator.gadgets.some((g) => g.trim() === "")) issues.push("gadgets list is empty");
+        if (!operator.season || operator.season.trim() === "") issues.push("season is empty");
+        if (issues.length > 0) errorMessages.push(`${operator.name}: ${issues.join(", ")}`);
     });
 
-    if (allClear) {
-        console.log("Operators clear");
+    if (errorMessages.length == 0) {
+        console.log("Operators are clear");
     } else {
         console.log("There were some errors with operators:");
         errorMessages.forEach((msg) => console.log(msg));
     }
 }
 
+/**
+ * 
+ * @param {Array<weaponObject>} weapons
+ */
+
 function validateWeapons(weapons) {
-    let allClear = true;
     let errorMessages = [];
 
     weapons.forEach((weapon) => {
         let issues = [];
 
-        if (!weapon) {
-            issues.push("weapon is undefined");
-            allClear = false;
-        }
-
-        if (!weapon.name || weapon.name.trim() === "") {
-            issues.push("name is empty");
-            allClear = false;
-        }
-
-        if (weapon.image && !fs.existsSync(weapon.image)) {
-            issues.push("image path does not exist");
-            allClear = false;
-        }
+        if (!weapon) issues.push("weapon object is undefined");
+        if (!weapon.name || weapon.name.trim() === "") issues.push("weapon name is empty or missing");
+        if (weapon.image && !fs.existsSync(weapon.image)) issues.push("weapon image path does not exist or is missing");
 
         if (weapon.stats) {
             for (const [key, value] of Object.entries(weapon.stats)) {
-                if (value <= 0) {
-                    issues.push(`${key}: ${value}`);
-                    allClear = false;
-                }
+                if (value <= 0) issues.push(`${key}: ${value}`);
             }
-        } else {
-            issues.push("stats are missing");
-            allClear = false;
-        }
+        } else issues.push("weapon stats are empty or missing");
 
-        if (!weapon.type || weapon.type.trim() === "") {
-            issues.push("type is empty");
-            allClear = false;
-        }
-
-        if (!weapon.scopes || weapon.scopes.length == 0) {
-            issues.push("scopes is empty");
-            allClear = false;
-        }
-
-        if (!weapon.barrels) {
-            issues.push("barrels is missing");
-            allClear = false;
-        }
-
-        if (!weapon.grips) {
-            issues.push("grips is missing");
-            allClear = false;
-        }
-
-        if (
-            !weapon.operators ||
-            weapon.operators.length === 0 ||
-            weapon.operators.some((op) => op.trim() === "")
-        ) {
-            issues.push("operators list is empty");
-            allClear = false;
-        }
-
-        if (issues.length > 0) {
-            errorMessages.push(`${weapon.name}: ${issues.join(", ")}`);
-        }
+        if (!weapon.type || weapon.type.trim() === "") issues.push("weapon type is empty or missing");
+        if (!weapon.scopes || weapon.scopes.length == 0) issues.push("weapon scopes are empty or missing");
+        if (!weapon.barrels) issues.push("weapon barrels are missing")
+        if (!weapon.grips) issues.push("weapon grips are missing");
+        if (!weapon.operators || weapon.operators.length === 0 || weapon.operators.some((op) => op.trim() === "")) issues.push("weapon operators list is empty or missing");
+        if (issues.length > 0) errorMessages.push(`${weapon.name}: ${issues.join(", ")}`);
     });
 
-    if (allClear) {
-        console.log("Weapons clear");
+    if (errorMessages.length == 0) {
+        console.log("Weapons are clear");
     } else {
         console.log("There were some errors with weapons:");
         errorMessages.forEach((msg) => console.log(msg));
     }
 }
 
+/**
+ * 
+ * @param {Array<mapObject>} maps 
+ */
+
 function validateMaps(maps) {
-    let allClear = true;
     let errorMessages = [];
 
     maps.forEach((map) => {
         let issues = [];
 
-        if (!map) {
-            issues.push("map is undefined");
-            allClear = false;
-        }
-
-        if (!map.name || map.name.trim() === "") {
-            issues.push("name is empty");
-            allClear = false;
-        }
-
-        if (map.image && !fs.existsSync(map.image)) {
-            issues.push("image path does not exist");
-            allClear = false;
-        }
-
-        if (issues.length > 0) {
-            errorMessages.push(`${map.name}: ${issues.join(", ")}`);
-        }
+        if (!map) issues.push("map object is undefined");
+        if (!map.name || map.name.trim() === "") issues.push("map name is empty or missing");
+        if (map.image && !fs.existsSync(map.image)) issues.push("image path does not exist or is missing");
+        if (issues.length > 0) errorMessages.push(`${map.name}: ${issues.join(", ")}`);
     });
 
-    if (allClear) {
-        console.log("Maps clear");
+    if (errorMessages.length == 0) {
+        console.log("Maps are clear");
     } else {
         console.log("There were some errors with maps:");
         errorMessages.forEach((msg) => console.log(msg));
     }
 }
 
+/**
+ * 
+ * @param {Array<operatorObject>} operators 
+ */
+
 function validateOperatorGadgets(operators) {
-    let allClear = true;
     let errorMessages = [];
 
     const gadgets = getGadgets().map(gadget => ({
@@ -327,84 +283,63 @@ function validateOperatorGadgets(operators) {
 
     operators.forEach((operator) => {
         operator.gadgets.forEach(gadget => {
-            if (!gadgets.some(g => g.name === gadget.toLowerCase().replaceAll(' ', ''))) {
-                errorMessages.push(`${operator.name} has invalid gadget: ${gadget}`);
-                allClear = false;
-            }
+            if (!gadgets.some(g => g.name === gadget.toLowerCase().replaceAll(' ', ''))) errorMessages.push(`${operator.name} has an invalid gadget: ${gadget}`);
         })
     });
 
-    if (allClear) {
-        console.log("Operator Gadgets clear");
+    if (errorMessages.length == 0) {
+        console.log("Operator Gadgets are clear");
     } else {
         console.log("There were some errors with operator gadgets:");
         errorMessages.forEach((msg) => console.log(msg));
     }
 }
 
+/**
+ * 
+ * @param {Array<operatorObject>} operators 
+ * @param {Array<weaponObject>} weapons 
+ */
+
 function validateOperatorWeaponMappings(operators, weapons) {
-    let allClear = true;
     let errorMessages = [];
 
     operators.forEach((operator) => {
         operator.guns.primary.forEach((primaryWeapon) => {
             const weapon = weapons.find(w => w.name.toLowerCase() === primaryWeapon.toLowerCase());
             if (primaryWeapon.includes('Shield')) return;
-            if (!weapon) {
-                errorMessages.push(`Primary weapon '${primaryWeapon}' for operator '${operator.name}' does not exist.`);
-                allClear = false;
-            } else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) {
-                errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${primaryWeapon}'.`);
-                allClear = false;
-            }
+            if (!weapon) errorMessages.push(`Primary weapon '${primaryWeapon}' for operator '${operator.name}' does not exist.`);
+            else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${primaryWeapon}'.`);
         });
 
         operator.guns.secondary.forEach((secondaryWeapon) => {
             const weapon = weapons.find(w => w.name.toLowerCase() === secondaryWeapon.toLowerCase());
-            if (!weapon) {
-                errorMessages.push(`Secondary weapon '${secondaryWeapon}' for operator '${operator.name}' does not exist.`);
-                allClear = false;
-            } else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) {
-                errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${secondaryWeapon}'.`);
-                allClear = false;
-            }
+            if (!weapon) errorMessages.push(`Secondary weapon '${secondaryWeapon}' for operator '${operator.name}' does not exist.`);
+            else if (!weapon.operators.map(op => op.toLowerCase()).includes(operator.name.toLowerCase())) errorMessages.push(`Operator '${operator.name}' is not listed in the operators list for weapon '${secondaryWeapon}'.`);
         });
     });
 
     weapons.forEach((weapon) => {
         weapon.operators.forEach((operatorName) => {
             const operator = operators.find(op => op.name.toLowerCase() === operatorName.toLowerCase());
-            if (!operator) {
-                errorMessages.push(`Operator '${operatorName}' listed in weapon '${weapon.name}' is unknown.`);
-                allClear = false;
-            } else {
+            if (!operator) errorMessages.push(`Operator '${operatorName}' listed in weapon '${weapon.name}' is unknown.`); 
+            else {
                 const allOperatorWeapons = [...operator.guns.primary, ...operator.guns.secondary];
-                if (!allOperatorWeapons.map(w => w.toLowerCase()).includes(weapon.name.toLowerCase())) {
-                    errorMessages.push(`Weapon '${weapon.name}' listed for operator '${operatorName}' but is not in their weapon list.`);
-                    allClear = false;
-                }
+                if (!allOperatorWeapons.map(w => w.toLowerCase()).includes(weapon.name.toLowerCase())) errorMessages.push(`Weapon '${weapon.name}' listed for operator '${operatorName}' but is not in their weapon list.`);
             }
         });
     });
 
-    if (allClear) {
-        console.log("Operator-weapon mappings are valid");
+    if (errorMessages.length == 0) {
+        console.log("Operator weapon mappings are clear");
     } else {
-        console.log("There were some errors with operator-weapon mappings:");
+        console.log("There were some errors with operator weapon mappings:");
         errorMessages.forEach(msg => console.log(msg));
     }
 }
 
-function validateAll() {
-    const operators = getOperators();
-    const weapons = getWeapons();
-    const maps = getMaps();
-
-    validateOperators(operators);
-    validateWeapons(weapons);
-    validateMaps(maps);
-    validateOperatorGadgets(operators);
-    validateOperatorWeaponMappings(operators, weapons);
-}
-
-validateAll();
+validateOperators(getOperators());
+validateWeapons(getWeapons());
+validateMaps(getMaps());
+validateOperatorGadgets(getOperators());
+validateOperatorWeaponMappings(getOperators(), getWeapons());

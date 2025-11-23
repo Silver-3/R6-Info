@@ -10,11 +10,11 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
-    "Crowd-Control"
+    "Crowd Control"
   ],
   "stats": {
-    "health": 3,
-    "speed": 1,
+    "health": 2,
+    "speed": 2,
     "difficulty": 1
   },
   "bio": {
@@ -29,12 +29,12 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "MP5K",
-      "M590A1"
+      "M590A1",
+      "MP5K"
     ],
     "secondary": [
-      "P226 MK 25",
-      "SMG-11"
+      "SMG-11",
+      "P226 MK 25"
     ]
   },
   "gadgets": [

@@ -9,7 +9,7 @@ module.exports = {
   "icon": path.join(__dirname, './icon.png'),
   "image": path.join(__dirname, './image.png'),
   "specialties": [
-    "Brach",
+    "Breach",
     "Anti-Gadget"
   ],
   "stats": {
@@ -29,8 +29,8 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "LMG-E",
-      "M762"
+      "M762",
+      "LMG-E"
     ],
     "secondary": [
       "RG15"

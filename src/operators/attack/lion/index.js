@@ -10,7 +10,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
-    "Map control"
+    "Map Control"
   ],
   "stats": {
     "health": 2,
@@ -39,9 +39,9 @@ module.exports = {
     ]
   },
   "gadgets": [
+    "Frag grenade",
     "Stun grenade",
-    "Claymore",
-    "Frag grenade"
+    "Claymore"
   ],
   "season": "Y3S1 - Chimera"
 };

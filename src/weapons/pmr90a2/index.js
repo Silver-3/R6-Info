@@ -1,17 +1,19 @@
 const path = require('path');
 
 module.exports = {
-  "name": "MK17 CQB",
+  "name": "PMR90A2",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 44,
-    "firerate": 585,
-    "ammo": 25,
-    "maxammo": 221,
-    "difficulty": 1
+    "damage": 62,
+    "firerate": 1,
+    "ammo": 20,
+    "maxammo": 141,
+    "difficulty": 2
   },
-  "type": "Assault Rifle",
+  "type": "Marksman Rifle",
   "scopes": [
+    "Telescopic A",
+    "Telescopic B",
     "Magnified A",
     "Magnified B",
     "Magnified C",
@@ -28,11 +30,8 @@ module.exports = {
     "Iron Sight"
   ],
   "barrels": [
-    "Flash Hider",
-    "Compensator",
     "Muzzle Brake",
-    "Suppressor",
-    "Extended Barrel"
+    "Suppressor"
   ],
   "grips": [
     "Vertical Grip",
@@ -40,6 +39,9 @@ module.exports = {
     "Horizontal Grip"
   ],
   "operators": [
-    "Blackbeard"
+    "Capitao",
+    "Hibana",
+    "Nokk",
+    "Thatcher"
   ]
 };

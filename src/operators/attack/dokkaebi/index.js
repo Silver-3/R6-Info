@@ -40,8 +40,8 @@ module.exports = {
   },
   "gadgets": [
     "Smoke grenade",
-    "Stun grenade",
-    "Impact emp grenade"
+    "Impact emp grenade",
+    "Stun grenade"
   ],
   "season": "Y2S4 - White Noise"
 };

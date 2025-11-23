@@ -33,14 +33,14 @@ module.exports = {
     ],
     "secondary": [
       "BEARING 9",
-      "Q-929",
-      "ITA12S"
+      "ITA12S",
+      "Q-929"
     ]
   },
   "gadgets": [
+    "Deployable shield",
     "Barbed wire",
-    "Bulletproof camera",
-    "Deployable shield"
+    "Bulletproof camera"
   ],
   "season": "Y6S2 - North Star"
 };

@@ -39,8 +39,8 @@ module.exports = {
   },
   "gadgets": [
     "Smoke grenade",
-    "Impact emp grenade",
-    "Frag grenade"
+    "Frag grenade",
+    "Impact emp grenade"
   ],
   "season": "Y4S1 - Burnt Horizon"
 };

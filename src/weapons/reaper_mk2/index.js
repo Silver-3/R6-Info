@@ -27,6 +27,7 @@ module.exports = {
     "Oryx",
     "Pulse",
     "Ying",
-    "Rook"
+    "Rook",
+    "Maverick"
   ]
 };

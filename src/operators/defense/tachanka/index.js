@@ -33,9 +33,9 @@ module.exports = {
       "9x19VSN"
     ],
     "secondary": [
-      "GSH-18",
+      "BEARING 9",
       "PMM",
-      "BEARING 9"
+      "GSH-18"
     ]
   },
   "gadgets": [

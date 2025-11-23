@@ -33,6 +33,7 @@ module.exports = {
     "Mira",
     "Thunderbird",
     "Striker",
-    "Melusi"
+    "Melusi",
+    "Thermite"
   ]
 };

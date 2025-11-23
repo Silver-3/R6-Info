@@ -10,7 +10,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Intel",
-    "Suppot"
+    "Support"
   ],
   "stats": {
     "health": 1,
@@ -29,18 +29,19 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "M1014",
-      "UMP45"
+      "UMP45",
+      "M1014"
     ],
     "secondary": [
-      "M45 MEUSOC",
+      "Reaper MK2",
       "5.7 USG",
-      "Reaper MK2"
+      "M45 MEUSOC"
     ]
   },
   "gadgets": [
     "Nitro cell",
-    "Deployable shield"
+    "Deployable shield",
+    "Observation blocker"
   ],
   "season": "Release"
 };

@@ -10,7 +10,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Front-Line",
-    "Map-Control"
+    "Map Control"
   ],
   "stats": {
     "health": 2,

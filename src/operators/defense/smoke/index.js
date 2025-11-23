@@ -29,12 +29,12 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "FMG-9",
-      "M590A1"
+      "M590A1",
+      "FMG-9"
     ],
     "secondary": [
-      "P226 MK 25",
-      "SMG-11"
+      "SMG-11",
+      "P226 MK 25"
     ]
   },
   "gadgets": [

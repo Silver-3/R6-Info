@@ -30,16 +30,18 @@ module.exports = {
   "guns": {
     "primary": [
       "Type-89",
-      "Supernova"
+      "Supernova",
+      "PMR90A2"
     ],
     "secondary": [
-      "P229",
-      "BEARING 9"
+      "BEARING 9",
+      "P229"
     ]
   },
   "gadgets": [
+    "Breach charge",
     "Stun grenade",
-    "Breach charge"
+    "Claymore"
   ],
   "season": "Y1S4 - Red Crow"
 };

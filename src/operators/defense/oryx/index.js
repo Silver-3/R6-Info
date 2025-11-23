@@ -32,8 +32,8 @@ module.exports = {
       "SPAS-12"
     ],
     "secondary": [
-      "Bailiff 410",
       "USP40",
+      "Bailiff 410",
       "Reaper MK2"
     ]
   },

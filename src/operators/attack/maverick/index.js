@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   "name": "Maverick",
   "ability": {
-    "name": "Breacing Torch",
+    "name": "Breaching Torch",
     "description": "Blowtorch capable of burning holes through reinforced walls at an almost inaudible level."
   },
   "icon": path.join(__dirname, './icon.png'),
@@ -29,17 +29,18 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "AR-15.50",
-      "M4"
+      "M4",
+      "AR-15.50"
     ],
     "secondary": [
-      "1911 Tacops"
+      "1911 Tacops",
+      "Reaper MK2"
     ]
   },
   "gadgets": [
-    "Stun grenade",
     "Claymore",
-    "Smoke grenade"
+    "Stun grenade",
+    "Frag grenade"
   ],
   "season": "Y3S3 - Grim sky"
 };

@@ -15,7 +15,7 @@ module.exports = {
   "stats": {
     "health": 2,
     "speed": 2,
-    "difficulty": 1
+    "difficulty": 2
   },
   "bio": {
     "realname": "Marius Sreicher",
@@ -29,12 +29,12 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "M870",
-      "416-C Carbine"
+      "416-C Carbine",
+      "M870"
     ],
     "secondary": [
-      "P12",
-      "P-10C"
+      "P-10C",
+      "P12"
     ]
   },
   "gadgets": [

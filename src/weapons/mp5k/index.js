@@ -5,7 +5,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "stats": {
     "damage": 30,
-    "firerate": 900,
+    "firerate": 800,
     "ammo": 30,
     "maxammo": 181,
     "difficulty": 2

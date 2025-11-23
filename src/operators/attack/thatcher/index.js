@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   "name": "Thatcher",
   "ability": {
-    "name": "EMP Grenade",
-    "description": "Uses EMP Grenades to disable any electonics in range."
+    "name": "E.G.S. Disruptor",
+    "description": "A shoulder-mounted EMP wave launcher."
   },
   "icon": path.join(__dirname, './icon.png'),
   "image": path.join(__dirname, './image.png'),
@@ -15,7 +15,7 @@ module.exports = {
   "stats": {
     "health": 3,
     "speed": 1,
-    "difficulty": 1
+    "difficulty": 2
   },
   "bio": {
     "realname": "Mike Baker",
@@ -29,8 +29,9 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "AR33",
       "L85A2",
+      "AR33",
+      "PMR90A2",
       "M590A1"
     ],
     "secondary": [
@@ -38,8 +39,8 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Breach charge",
-    "Claymore"
+    "Claymore",
+    "Breach charge"
   ],
   "season": "Release"
 };

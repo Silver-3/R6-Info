@@ -37,8 +37,8 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Stun grenade",
-    "Claymore"
+    "Claymore",
+    "Stun grenade"
   ],
   "season": "Y6S1 - Crimson Heist"
 };

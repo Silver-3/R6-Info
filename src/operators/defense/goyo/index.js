@@ -37,9 +37,9 @@ module.exports = {
     ]
   },
   "gadgets": [
+    "Impact grenade",
     "Proximity alarm",
-    "Bulletproof camera",
-    "Impact grenade"
+    "Bulletproof camera"
   ],
   "season": "Y4S3 - Ember Rise"
 };

@@ -33,8 +33,8 @@ module.exports = {
       "SASG-12"
     ],
     "secondary": [
-      "PMM",
-      "GSH-18"
+      "GSH-18",
+      "PMM"
     ]
   },
   "gadgets": [

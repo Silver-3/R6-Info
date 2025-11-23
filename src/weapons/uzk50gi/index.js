@@ -4,7 +4,7 @@ module.exports = {
   "name": "UZK50GI",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 40,
+    "damage": 36,
     "firerate": 700,
     "ammo": 22,
     "maxammo": 177,

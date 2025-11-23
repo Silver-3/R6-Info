@@ -30,7 +30,8 @@ module.exports = {
   "guns": {
     "primary": [
       "PARA-308",
-      "M249"
+      "M249",
+      "PMR90A2"
     ],
     "secondary": [
       "PRB92",
@@ -38,9 +39,9 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Claymore",
     "Hard breach charge",
-    "Impact emp grenade"
+    "Impact emp grenade",
+    "Claymore"
   ],
   "season": "Y1S3 - Skull Rain"
 };

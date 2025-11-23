@@ -13,9 +13,9 @@ module.exports = {
     "Front-Line"
   ],
   "stats": {
-    "health": 2,
+    "health": 1,
     "speed": 3,
-    "difficulty": 1
+    "difficulty": 2
   },
   "bio": {
     "realname": "Eliza Cohen",
@@ -29,17 +29,17 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "G36C",
-      "R4-C"
+      "R4-C",
+      "G36C"
     ],
     "secondary": [
-      "M45 MEUSOC",
-      "5.7 USG"
+      "5.7 USG",
+      "M45 MEUSOC"
     ]
   },
   "gadgets": [
-    "Breach charge",
-    "Claymore"
+    "Claymore",
+    "Breach charge"
   ],
   "season": "Release"
 };

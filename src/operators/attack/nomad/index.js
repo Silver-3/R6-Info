@@ -33,13 +33,13 @@ module.exports = {
       "ARX200"
     ],
     "secondary": [
-      ".44 Mag Semi-Auto",
-      "PRB92"
+      "PRB92",
+      ".44 Mag Semi-Auto"
     ]
   },
   "gadgets": [
-    "Stun grenade",
-    "Breach charge"
+    "Breach charge",
+    "Stun grenade"
   ],
   "season": "Y3S4 - Wind Bastion"
 };

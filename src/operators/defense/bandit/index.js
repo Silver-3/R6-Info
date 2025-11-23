@@ -10,7 +10,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Entry",
-    "anti-Gadget"
+    "Anti-Gadget"
   ],
   "stats": {
     "health": 1,
@@ -33,8 +33,8 @@ module.exports = {
       "M870"
     ],
     "secondary": [
-      "P12",
-      "Keratos .357"
+      "Keratos .357",
+      "P12"
     ]
   },
   "gadgets": [

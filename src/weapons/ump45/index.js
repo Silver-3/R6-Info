@@ -4,7 +4,7 @@ module.exports = {
   "name": "UMP45",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 42,
+    "damage": 38,
     "firerate": 600,
     "ammo": 25,
     "maxammo": 176,

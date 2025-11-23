@@ -37,9 +37,9 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Hard breach charge",
+    "Impact emp grenade",
     "Smoke grenade",
-    "Impact emp grenade"
+    "Hard breach charge"
   ],
   "season": "Release"
 };

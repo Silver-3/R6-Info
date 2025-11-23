@@ -33,14 +33,14 @@ module.exports = {
       "TCSG12"
     ],
     "secondary": [
-      ".44 Mag Semi-Auto",
-      "LFP586"
+      "LFP586",
+      ".44 Mag Semi-Auto"
     ]
   },
   "gadgets": [
-    "Nitro cell",
     "Barbed wire",
-    "Observation blocker"
+    "Observation blocker",
+    "Nitro cell"
   ],
   "season": "Y3S4 - Wind Bastion"
 };

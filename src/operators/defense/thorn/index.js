@@ -33,8 +33,8 @@ module.exports = {
       "M870"
     ],
     "secondary": [
-      "1911 Tacops",
-      "C75 Auto"
+      "C75 Auto",
+      "1911 Tacops"
     ]
   },
   "gadgets": [

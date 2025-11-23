@@ -13,8 +13,8 @@ module.exports = {
     "Anti-Gadget"
   ],
   "stats": {
-    "health": 2,
-    "speed": 2,
+    "health": 3,
+    "speed": 1,
     "difficulty": 1
   },
   "bio": {

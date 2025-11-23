@@ -28,8 +28,8 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "P90",
       "MP5",
+      "P90",
       "SG-CQB"
     ],
     "secondary": [
@@ -41,7 +41,7 @@ module.exports = {
   "gadgets": [
     "Proximity alarm",
     "Impact grenade",
-    "Observation blocker"
+    "Nitro cell"
   ],
   "season": "Release"
 };

@@ -29,8 +29,8 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "ARX200",
-      "G36C"
+      "G36C",
+      "ARX200"
     ],
     "secondary": [
       "MK1 9mm",

@@ -39,9 +39,9 @@ module.exports = {
     ]
   },
   "gadgets": [
+    "Frag grenade",
     "Smoke grenade",
-    "Stun grenade",
-    "Frag grenade"
+    "Stun grenade"
   ],
   "season": "Y3S1 - Chimera"
 };

@@ -38,8 +38,8 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Smoke grenade",
-    "Claymore"
+    "Claymore",
+    "Smoke grenade"
   ],
   "season": "Y8S1 - Commanding Force"
 };

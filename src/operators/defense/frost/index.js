@@ -29,17 +29,17 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "Super 90",
-      "9mm C1"
+      "9mm C1",
+      "Super 90"
     ],
     "secondary": [
-      "MK1 9mm",
-      "ITA12S"
+      "ITA12S",
+      "MK1 9mm"
     ]
   },
   "gadgets": [
-    "Bulletproof camera",
-    "Deployable shield"
+    "Deployable shield",
+    "Bulletproof camera"
   ],
   "season": "Y1S1 - Black Ice"
 };

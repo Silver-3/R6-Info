@@ -13,8 +13,8 @@ module.exports = {
     "Crowd Control"
   ],
   "stats": {
-    "health": 3,
-    "speed": 1,
+    "health": 2,
+    "speed": 2,
     "difficulty": 3
   },
   "bio": {
@@ -38,8 +38,8 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Impact grenade",
-    "Deployable shield"
+    "Deployable shield",
+    "Impact grenade"
   ],
   "season": "Y1S4 - Red Crow"
 };

@@ -29,8 +29,8 @@ module.exports = {
   "guns": {
     "primary": [
       "Ballistic Shield",
-      "6P41",
-      "AK-12"
+      "AK-12",
+      "6P41"
     ],
     "secondary": [
       "PMM",

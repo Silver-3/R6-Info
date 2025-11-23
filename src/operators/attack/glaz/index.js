@@ -33,8 +33,8 @@ module.exports = {
     ],
     "secondary": [
       "PMM",
-      "GONNE-6",
-      "BEARING 9"
+      "BEARING 9",
+      "GONNE-6"
     ]
   },
   "gadgets": [

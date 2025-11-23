@@ -28,14 +28,14 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "SG-CQB",
+      "P90",
       "MP5",
-      "P90"
+      "SG-CQB"
     ],
     "secondary": [
-      "P9",
+      "Bailiff 410",
       "LFP586",
-      "Bailiff 410"
+      "P9"
     ]
   },
   "gadgets": [

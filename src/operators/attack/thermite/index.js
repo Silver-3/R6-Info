@@ -29,12 +29,13 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "M1014",
-      "556XI"
+      "556XI",
+      "M1014"
     ],
     "secondary": [
       "M45 MEUSOC",
-      "5.7 USG"
+      "5.7 USG",
+      "ITA12S"
     ]
   },
   "gadgets": [

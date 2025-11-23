@@ -37,9 +37,9 @@ module.exports = {
     ]
   },
   "gadgets": [
+    "Frag grenade",
     "Hard breach charge",
-    "Claymore",
-    "Frag grenade"
+    "Claymore"
   ],
   "season": "Y7S2 - Vector Glare"
 };

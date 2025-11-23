@@ -4,7 +4,7 @@ module.exports = {
   "name": "Commando 9",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 40,
+    "damage": 36,
     "firerate": 780,
     "ammo": 25,
     "maxammo": 176,

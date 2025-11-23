@@ -33,8 +33,8 @@ module.exports = {
       "SR-25"
     ],
     "secondary": [
-      "5.7 USG",
-      "ITA12S"
+      "ITA12S",
+      "5.7 USG"
     ]
   },
   "gadgets": [

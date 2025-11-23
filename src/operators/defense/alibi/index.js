@@ -33,8 +33,8 @@ module.exports = {
       "ACS12"
     ],
     "secondary": [
-      "Keratos .357",
-      "Bailiff 410"
+      "Bailiff 410",
+      "Keratos .357"
     ]
   },
   "gadgets": [

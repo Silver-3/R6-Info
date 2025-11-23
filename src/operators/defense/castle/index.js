@@ -33,8 +33,8 @@ module.exports = {
       "M1014"
     ],
     "secondary": [
-      "5.7 USG",
       "Super Shorty",
+      "5.7 USG",
       "M45 MEUSOC"
     ]
   },

@@ -4,7 +4,7 @@ module.exports = {
   "name": "FO-12",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 26,
+    "damage": 24,
     "firerate": 1,
     "ammo": 10,
     "maxammo": 71,

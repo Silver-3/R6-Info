@@ -30,7 +30,8 @@ module.exports = {
   "guns": {
     "primary": [
       "FMG-9",
-      "SIX12 SD"
+      "SIX12 SD",
+      "PMR90A2"
     ],
     "secondary": [
       "5.7 USG",
@@ -38,9 +39,9 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Frag grenade",
+    "Impact emp grenade",
     "Hard breach charge",
-    "Impact emp grenade"
+    "Frag grenade"
   ],
   "season": "Y4S2 - Phantom Sight"
 };

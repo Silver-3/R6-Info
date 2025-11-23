@@ -33,8 +33,8 @@ module.exports = {
       "Super 90"
     ],
     "secondary": [
-      "RG15",
-      "ITA12S"
+      "ITA12S",
+      "RG15"
     ]
   },
   "gadgets": [

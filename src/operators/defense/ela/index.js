@@ -37,9 +37,9 @@ module.exports = {
     ]
   },
   "gadgets": [
-    "Barbed wire",
     "Deployable shield",
-    "Impact grenade"
+    "Impact grenade",
+    "Barbed wire"
   ],
   "season": "Y2S3 - Blood Orchid"
 };

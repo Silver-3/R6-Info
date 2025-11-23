@@ -33,14 +33,14 @@ module.exports = {
       "Supernova"
     ],
     "secondary": [
-      "SMG-11",
       "ITA12S",
+      "SMG-11",
       "GONNE-6"
     ]
   },
   "gadgets": [
-    "Hard breach charge",
-    "Stun grenade"
+    "Stun grenade",
+    "Hard breach charge"
   ],
   "season": "Y4S3 - Ember rise"
 };

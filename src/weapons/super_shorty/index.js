@@ -31,7 +31,6 @@ module.exports = {
     "Brava",
     "Sentry",
     "Castle",
-    "Lesion",
     "Clash",
     "Wamai"
   ]

@@ -32,8 +32,8 @@ module.exports = {
       "CCE Shield MK2"
     ],
     "secondary": [
-      "Super Shorty",
       "SPSMG9",
+      "Super Shorty",
       "P-10C"
     ]
   },

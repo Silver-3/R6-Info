@@ -33,8 +33,8 @@ module.exports = {
       "MPX"
     ],
     "secondary": [
-      "P-10C",
-      "SMG-12"
+      "SMG-12",
+      "P-10C"
     ]
   },
   "gadgets": [

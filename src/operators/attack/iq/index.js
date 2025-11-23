@@ -29,18 +29,18 @@ module.exports = {
   },
   "guns": {
     "primary": [
-      "AUG A2",
+      "G8A1",
       "552 Commando",
-      "G8A1"
+      "AUG A2"
     ],
     "secondary": [
       "P12"
     ]
   },
   "gadgets": [
-    "Breach charge",
+    "Frag grenade",
     "Claymore",
-    "Frag grenade"
+    "Breach charge"
   ],
   "season": "Release"
 };

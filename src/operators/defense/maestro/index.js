@@ -10,7 +10,7 @@ module.exports = {
   "image": path.join(__dirname, './image.png'),
   "specialties": [
     "Anti-Gadget",
-    "Intl"
+    "Intel"
   ],
   "stats": {
     "health": 3,

@@ -33,14 +33,14 @@ module.exports = {
       "SG-CQB"
     ],
     "secondary": [
-      "P229",
-      "Bailiff 410"
+      "Bailiff 410",
+      "P229"
     ]
   },
   "gadgets": [
+    "Hard breach charge",
     "Impact emp grenade",
-    "Claymore",
-    "Hard breach charge"
+    "Claymore"
   ],
   "season": "Y7S3 - Brutal Swarm"
 };
