@@ -33,7 +33,8 @@ module.exports = {
       "P10 Roni"
     ],
     "secondary": [
-      "SDP 9mm"
+      "SDP 9mm",
+      "Super Shorty"
     ]
   },
   "gadgets": [

@@ -32,6 +32,7 @@ module.exports = {
     "Sentry",
     "Castle",
     "Clash",
-    "Wamai"
+    "Wamai",
+    "Mozzie"
   ]
 };
