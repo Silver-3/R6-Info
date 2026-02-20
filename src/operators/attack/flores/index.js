@@ -30,7 +30,8 @@ module.exports = {
   "guns": {
     "primary": [
       "AR33",
-      "SR-25"
+      "SR-25",
+      "T-95 LSW"
     ],
     "secondary": [
       "GSH-18"

@@ -13,8 +13,8 @@ module.exports = {
     "Support"
   ],
   "stats": {
-    "health": 2,
-    "speed": 2,
+    "health": 1,
+    "speed": 3,
     "difficulty": 2
   },
   "bio": {

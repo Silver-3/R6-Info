@@ -39,6 +39,7 @@ module.exports = {
     "Horizontal Grip"
   ],
   "operators": [
-    "Ying"
+    "Ying",
+    "Flores"
   ]
 };

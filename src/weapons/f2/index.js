@@ -34,8 +34,13 @@ module.exports = {
     "Suppressor",
     "Extended Barrel"
   ],
-  "grips": [],
+  "grips": [
+    "Vertical Grip",
+    "Angled Grip",
+    "Horizontal Grip"
+  ],
   "operators": [
-    "Twitch"
+    "Twitch",
+    "Solid Snake"
   ]
 };

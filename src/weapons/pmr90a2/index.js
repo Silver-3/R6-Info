@@ -42,6 +42,7 @@ module.exports = {
     "Capitao",
     "Hibana",
     "Nokk",
-    "Thatcher"
+    "Thatcher",
+    "Solid Snake"
   ]
 };
