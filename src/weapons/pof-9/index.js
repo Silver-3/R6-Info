@@ -4,7 +4,7 @@ module.exports = {
   "name": "POF-9",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 35,
+    "damage": 37,
     "firerate": 740,
     "ammo": 50,
     "maxammo": 201,

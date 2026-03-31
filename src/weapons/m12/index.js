@@ -4,7 +4,7 @@ module.exports = {
   "name": "M12",
   "image": path.join(__dirname, './image.png'),
   "stats": {
-    "damage": 40,
+    "damage": 42,
     "firerate": 550,
     "ammo": 30,
     "maxammo": 181,
