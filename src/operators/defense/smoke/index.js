@@ -39,6 +39,7 @@ module.exports = {
   },
   "gadgets": [
     "Barbed wire",
+    "Deployable shield",
     "Proximity alarm"
   ],
   "season": "Release"

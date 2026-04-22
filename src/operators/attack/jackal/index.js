@@ -40,7 +40,8 @@ module.exports = {
   },
   "gadgets": [
     "Claymore",
-    "Smoke grenade"
+    "Smoke grenade",
+    "Frag grenade"
   ],
   "season": "Y2S1 - Velvet Shell"
 };
